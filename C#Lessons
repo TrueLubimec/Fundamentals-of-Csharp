@@ -1,0 +1,6 @@
+// Lessons from Microsoft
+
+string firstfriend = "Kolya";
+string secondfriend = "Lena";
+Console.WriteLine($"My friends are {firstfriend} and {secondfriend}!");
+Console.WriteLine($"The name {firstfriend} has {firstfriend.Length} charaters(letters)");
