@@ -3,11 +3,12 @@
 
 // Strings //
 using System;
-
-class Hello;
+namespace Lesson
 {
-    static void Main()
+
+    class Hello;
     {
+
         string firstfriend = "Kolya";
         string secondfriend = "Lena";
         Console.WriteLine($"My friends are {firstfriend} and {secondfriend}!");
@@ -40,13 +41,10 @@ class Hello;
         Console.WriteLine(songLyrics.EndsWith("hello"));
         Console.WriteLine(songLyrics.EndsWith("goodbye"));
     }
-}
 
-// Integers and Numbers //
+    // Integers and Numbers //
 
-class integerss
-{
-    static void Main()
+    class integerss
     {
         int a = 7;
         int b = 4;
@@ -59,6 +57,23 @@ class integerss
         int max = int.MaxValue();
         int min = int.MinValue();
         Console.WriteLine($"The range of integers is {min} to {max}")
+    }
 
+
+    class BeranchAndLoop
+    {
+        int a = 5;
+        int b = 3;
+        int c = 4;
+        if ((a + b + c > 10) || (a == b))
+        {
+            Console.WriteLine("The answer is greater than 10");
+            Console.WriteLine("Or the first number is equal to the second");
+        }
+        else
+        {
+            Console.WriteLine("The answer is not greater than 10");
+            Console.WriteLine("And the first number is not equal to the second");
+        }
     }
 }
