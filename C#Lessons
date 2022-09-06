@@ -1,79 +1,128 @@
 // Lessons from Microsoft
 
 
-// Strings //
+
 using System;
 namespace Lesson
 {
 
+    // Strings //
+
     class Hello;
     {
+        static void Main()
+        {
+            string firstfriend = "Kolya";
+            string secondfriend = "Lena";
+            Console.WriteLine($"My friends are {firstfriend} and {secondfriend}!");
+            Console.WriteLine($"The name {firstfriend} has {firstfriend.Length} charaters(letters)");
 
-        string firstfriend = "Kolya";
-        string secondfriend = "Lena";
-        Console.WriteLine($"My friends are {firstfriend} and {secondfriend}!");
-        Console.WriteLine($"The name {firstfriend} has {firstfriend.Length} charaters(letters)");
+            string greeting = "          Hello World      ";
+            Console.WriteLine($"[{greeting}]");
 
-        string greeting = "          Hello World      ";
-        Console.WriteLine($"[{greeting}]");
+            string trimmedGreeting = greeting.TrimStart();
+            Console.WriteLine($"[{trimmedGreeting}]");
 
-        string trimmedGreeting = greeting.TrimStart();
-        Console.WriteLine($"[{trimmedGreeting}]");
+            trimmedGreeting = greeting.TrimEnd();
+            Console.WriteLine($"[{trimmedGreeting}]");
 
-        trimmedGreeting = greeting.TrimEnd();
-        Console.WriteLine($"[{trimmedGreeting}]");
+            trimmedGreeting = greeting.Trim();
+            Console.WriteLine($"[{trimmedGreeting}]");
 
-        trimmedGreeting = greeting.Trim();
-        Console.WriteLine($"[{trimmedGreeting}]");
+            string sayHello = "Hello World!";
+            Console.WriteLine(sayHello);
+            sayHello = sayHello.Replace("Hello", "Greetings");
+            Console.WriteLine(sayHello);
 
-        string sayHello = "Hello World!";
-        Console.WriteLine(sayHello);
-        sayHello = sayHello.Replace("Hello", "Greetings");
-        Console.WriteLine(sayHello);
+            Console.WriteLine(sayHello.ToUpper());
+            Console.WriteLine(sayHello.ToLower());
 
-        Console.WriteLine(sayHello.ToUpper());
-        Console.WriteLine(sayHello.ToLower());
+            string songLyrics = "You say goodbye, and I say hello";
+            Console.WriteLine(songLyrics.StartsWith("You"));
+            Console.WriteLine(songLyrics.StartsWith("goodbye"));
 
-        string songLyrics = "You say goodbye, and I say hello";
-        Console.WriteLine(songLyrics.StartsWith("You"));
-        Console.WriteLine(songLyrics.StartsWith("goodbye"));
-
-        Console.WriteLine(songLyrics.EndsWith("hello"));
-        Console.WriteLine(songLyrics.EndsWith("goodbye"));
+            Console.WriteLine(songLyrics.EndsWith("hello"));
+            Console.WriteLine(songLyrics.EndsWith("goodbye"));
+        }
     }
 
     // Integers and Numbers //
 
     class integerss
     {
-        int a = 7;
-        int b = 4;
-        int c = 3;
-        int d = (a + b) / c;
-        int e = (a + b) % c;
-        Console.WriteLine($"quotient: {d}");
-        Console.WriteLine($"remainder: {e}");
+        static void Main()
+        {
+            int a = 7;
+            int b = 4;
+            int c = 3;
+            int d = (a + b) / c;
+            int e = (a + b) % c;
+            Console.WriteLine($"quotient: {d}");
+            Console.WriteLine($"remainder: {e}");
 
-        int max = int.MaxValue();
-        int min = int.MinValue();
-        Console.WriteLine($"The range of integers is {min} to {max}")
+            int max = int.MaxValue();
+            int min = int.MinValue();
+            Console.WriteLine($"The range of integers is {min} to {max}")
+        }
     }
 
+    // Branches and Loops
 
     class BeranchAndLoop
     {
-        int a = 5;
-        int b = 3;
-        int c = 4;
-        if ((a + b + c > 10) || (a == b))
+        static void Main()
         {
-            Console.WriteLine("The answer is greater than 10");
-            Console.WriteLine("Or the first number is equal to the second");
+            int a = 5;
+            int b = 3;
+            int c = 4;
+            if ((a + b + c > 10) || (a == b))
+            {
+                Console.WriteLine("The answer is greater than 10");
+                Console.WriteLine("Or the first number is equal to the second");
+            }
+            else
+            {
+                Console.WriteLine("The answer is not greater than 10");
+                Console.WriteLine("And the first number is not equal to the second");
+            }
+            int counter = 0;
+            
+            do
+            {
+            Console.WriteLine($"Hello World! The counter is {counter}");
+            counter++;
+            } while (counter < 10);
+            
+            for (int row = 1; row < 11; row++)
+            {
+                for (char column = 'a'; column < 'k'; column++)
+                {
+                    Console.WriteLine($"The cell is ({row}, {column})");
+                }
+            }
         }
-        else
+        
+    // Data Collections
+    class DataColl
+    {
+        static void Main()
         {
-            Console.WriteLine("The answer is not greater than 10");
-            Console.WriteLine("And the first number is not equal to the second");
+            var names = new List<string> { "<name>", "Ana", "Felipe" };
+            foreach (var name in names)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
+            Console.WriteLine();
+            names.Add("Maria");
+            names.Add("Bill");
+            names.Remove("Ana");
+            foreach (var name in names)
+            {
+            Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
         }
-    }
+    }   
+
+
+
 }
