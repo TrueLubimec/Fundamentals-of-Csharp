@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Lessons
 {
@@ -11,7 +12,18 @@ namespace Lessons
             string str = "5";
             string str2 = "2";
 
-            Console.WriteLine(str + str2);
+            int strint = Convert.ToInt32(str);
+            int strint2 = Convert.ToInt32(str2);
+            Console.WriteLine(strint + strint2);
+            NumberFormatInfo numberFormatInfo = new NumberFormatInfo()
+            {
+                NumberDecimalSeparator = ",",
+            };
+
+            string one_nine = "1,9";
+
+            double a = Convert.ToDouble(one_nine, numberFormatInfo);
+            Console.WriteLine(a);
         }
     }
 }
