@@ -9,21 +9,32 @@ namespace Lessons
         {
             Console.WriteLine("Hello, World!");
 
-            string str = "5";
-            string str2 = "2";
+            //string str = "5";
+            //string str2 = "2";
 
-            int strint = Convert.ToInt32(str);
-            int strint2 = Convert.ToInt32(str2);
-            Console.WriteLine(strint + strint2);
-            NumberFormatInfo numberFormatInfo = new NumberFormatInfo()
+            //int strint = Convert.ToInt32(str);
+            //int strint2 = Convert.ToInt32(str2);
+            //Console.WriteLine(strint + strint2);
+            //NumberFormatInfo numberFormatInfo = new NumberFormatInfo()
+            //{
+            //    NumberDecimalSeparator = ",",
+            //};
+
+            //string one_nine = "1,9";
+
+            //double a = Convert.ToDouble(one_nine, numberFormatInfo);
+            //Console.WriteLine(a);
+            Console.WriteLine("Enter the number!");
+            string bla = Console.ReadLine();
+            try
             {
-                NumberDecimalSeparator = ",",
-            };
-
-            string one_nine = "1,9";
-
-            double a = Convert.ToDouble(one_nine, numberFormatInfo);
-            Console.WriteLine(a);
-        }
+                int a = int.Parse(bla);
+                Console.WriteLine($"Successful converstaion! {a}");
+            }
+            catch(Exception)
+            {
+                Console.WriteLine("Unsuccessful conversation!");
+            }
+            }
     }
 }
