@@ -24,17 +24,31 @@ namespace Lessons
 
             //double a = Convert.ToDouble(one_nine, numberFormatInfo);
             //Console.WriteLine(a);
+
+
             Console.WriteLine("Enter the number!");
             string bla = Console.ReadLine();
-            try
+
+            //try
+            //{
+            //    int a = int.Parse(bla);
+            //    Console.WriteLine($"Successful converstaion! {a}");
+            //}
+            //catch (Exception)
+            //{
+            //    Console.WriteLine("Unsuccessful conversation!");
+            //}
+
+            int tryint;
+            bool res = int.TryParse(bla, out tryint);
+            if (res)
             {
-                int a = int.Parse(bla);
-                Console.WriteLine($"Successful converstaion! {a}");
+                System.Console.WriteLine($"Successful conversation! {tryint}");
             }
-            catch(Exception)
+            else
             {
-                Console.WriteLine("Unsuccessful conversation!");
+                System.Console.WriteLine("Failure!");
             }
-            }
+        }
     }
 }
