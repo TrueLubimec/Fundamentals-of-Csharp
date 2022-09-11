@@ -1,0 +1,8 @@
+D:\Code\Codding\Fundamentals of C++\C#VS\sup\obj\Debug\sup.csproj.AssemblyReference.cache
+D:\Code\Codding\Fundamentals of C++\C#VS\sup\obj\Debug\sup.csproj.SuggestedBindingRedirects.cache
+D:\Code\Codding\Fundamentals of C++\C#VS\sup\obj\Debug\sup.csproj.CoreCompileInputs.cache
+D:\Code\Codding\Fundamentals of C++\C#VS\sup\bin\Debug\sup.exe.config
+D:\Code\Codding\Fundamentals of C++\C#VS\sup\bin\Debug\sup.exe
+D:\Code\Codding\Fundamentals of C++\C#VS\sup\bin\Debug\sup.pdb
+D:\Code\Codding\Fundamentals of C++\C#VS\sup\obj\Debug\sup.exe
+D:\Code\Codding\Fundamentals of C++\C#VS\sup\obj\Debug\sup.pdb
