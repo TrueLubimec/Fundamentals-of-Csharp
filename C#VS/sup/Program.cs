@@ -1,8 +1,11 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Runtime.Serialization.Formatters;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace sup
@@ -41,7 +44,39 @@ namespace sup
             //    default:
             //        Console.WriteLine("Wrong expression!");
             //        break;
-            }
+            //)
+
+
+
+
+            //Console.WriteLine("Enter the range!");
+            //string dig = Console.ReadLine();
+            //string[] range = dig.Split(' ');
+            //int.TryParse(range[0], out int min);
+            //int.TryParse(range[1], out int max);
+            //int count = min;
+            //int evenCount = 0;
+            //int oddCount = 0;
+            //int oddSum = 0;
+            //int evenSum = 0;
+            //while (count <= max)
+            //{
+            //    if (count % 2 == 0)
+            //    {
+            //        evenCount++;
+            //        evenSum = evenSum + count;
+            //        count++;
+            //    }
+            //    else
+            //    {
+            //        oddCount++;
+            //        oddSum = oddSum + count;
+            //        count++;
+            //    }
+            //}
+
+            //Console.WriteLine($"evens sum = {evenSum}, odds sum = {oddSum}");
+            //Console.WriteLine($"evens = {evenCount}, odds = {oddCount}");
         }
     }
 }
