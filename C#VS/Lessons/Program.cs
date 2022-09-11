@@ -26,8 +26,8 @@ namespace Lessons
             //Console.WriteLine(a);
 
 
-            Console.WriteLine("Enter the number!");
-            string bla = Console.ReadLine();
+            //Console.WriteLine("Enter the number!");
+            //string bla = Console.ReadLine();
 
             //try
             //{
@@ -39,15 +39,30 @@ namespace Lessons
             //    Console.WriteLine("Unsuccessful conversation!");
             //}
 
-            int tryint;
-            bool res = int.TryParse(bla, out tryint);
-            if (res)
+            //int tryint;
+            //bool res = int.TryParse(bla, out tryint);
+            //if (res)
+            //{
+            //    System.Console.WriteLine($"Successful conversation! {tryint}");
+            //}
+            //else
+            //{
+            //    System.Console.WriteLine("Failure!");
+            //}
+
+            int sint = int.Parse(Console.ReadLine());
+
+            switch (sint)
             {
-                System.Console.WriteLine($"Successful conversation! {tryint}");
-            }
-            else
-            {
-                System.Console.WriteLine("Failure!");
+                case 1:
+                    Console.WriteLine("You wrote down digit 1");
+                    break;
+                case 2:
+                    Console.WriteLine("You wrote down digit 2");
+                    break;
+                default:
+                    Console.WriteLine($"You wrote down digit {sint}!!!");
+                    break;
             }
         }
     }
