@@ -363,12 +363,15 @@ namespace Lessons
             //        break;
             //}
 
-            int count = 0;
-            while (count < 10)
-            {
-                ++count;
-                Console.WriteLine($"Count = {count}");
-            }
+            //int count = 0;
+            //while (count < 10)
+            //{
+            //    ++count;
+            //    Console.WriteLine($"Count = {count}");
+            //}
+
+
+
         }
     }
 }
