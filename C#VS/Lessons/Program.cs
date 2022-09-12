@@ -371,7 +371,22 @@ namespace Lessons
             //}
 
 
+            for (;;)
+            {
+                Console.WriteLine("Gays");
+                System.Threading.Thread.Sleep(300);
+                break;
+            }
 
+            int count = 0;
+            for (;count < 3; count++)
+            {
+                Console.WriteLine($"For_1: {count}");
+            }
+            for(;count < 5; count++)
+            {
+                Console.WriteLine($"For_2: {count}");
+            }
         }
     }
 }
