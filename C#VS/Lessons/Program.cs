@@ -393,6 +393,14 @@ namespace Lessons
             //    Console.WriteLine(j);
             //    Console.WriteLine(i);
             //}
+
+            //for (int c = int.Parse(Console.ReadLine()); c >= 0; c--) // NOT RECOMMENDED
+            //{
+            //    Console.WriteLine($"Gays left {c}");
+            //}
+
+
+
         }
     }
 }
