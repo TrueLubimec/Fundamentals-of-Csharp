@@ -371,22 +371,28 @@ namespace Lessons
             //}
 
 
-            for (;;)
-            {
-                Console.WriteLine("Gays");
-                System.Threading.Thread.Sleep(300);
-                break;
-            }
+            //for (;;)
+            //{
+            //    Console.WriteLine("Gays");
+            //    System.Threading.Thread.Sleep(300);
+            //    break;
+            //}
 
-            int count = 0;
-            for (;count < 3; count++)
-            {
-                Console.WriteLine($"For_1: {count}");
-            }
-            for(;count < 5; count++)
-            {
-                Console.WriteLine($"For_2: {count}");
-            }
+            //int count = 0;
+            //for (;count < 3; count++)
+            //{
+            //    Console.WriteLine($"For_1: {count}");
+            //}
+            //for(;count < 5; count++)
+            //{
+            //    Console.WriteLine($"For_2: {count}");
+            //}
+
+            //for(int i = 0, j = 0; i < 10 ; i++, j++)
+            //{
+            //    Console.WriteLine(j);
+            //    Console.WriteLine(i);
+            //}
         }
     }
 }
