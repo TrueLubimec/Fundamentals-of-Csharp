@@ -80,28 +80,29 @@ namespace sup
 
 
 
-            //ТРЕУГОЛЬНИКИ
-            for (int v = 0; v < 4; v++)
-            {
-                for (int i = 0; i < 10; i++)
-                {
-                    for (int a = 0; a < i + 1; a++)
-                    {
-                        Console.Write("#");
-                    }
-                    Console.WriteLine();
-                }
-                Console.WriteLine();
-                for (int i = 10; i > 0; i--)
-                {
-                    for (int a = 0; a < i + 1; a++)
-                    {
-                        Console.Write("#");
-                    }
-                    Console.WriteLine();
-                }
-                Console.WriteLine();
-            }
+            ////ТРЕУГОЛЬНИКИ
+            //for (int v = 0; v < 4; v++)
+            //{
+            //    for (int i = 0; i < 10; i++)
+            //    {
+            //        for (int a = 0; a < i + 1; a++)
+            //        {
+            //            Console.Write("#");
+            //        }
+            //        Console.WriteLine();
+            //    }
+            //    Console.WriteLine();
+            //    for (int i = 10; i > 0; i--)
+            //    {
+            //        for (int a = 0; a < i + 1; a++)
+            //        {
+            //            Console.Write("#");
+            //        }
+            //        Console.WriteLine();
+            //    }
+            //    Console.WriteLine();
+            //}
+
 
 
         }

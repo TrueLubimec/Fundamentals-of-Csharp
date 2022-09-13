@@ -400,7 +400,32 @@ namespace Lessons
             //}
 
 
+            /////ТЕРНАРНЫЕ ОПЕРАТОРЫ
 
+            //bool accessAllowed;
+
+            //string standartPassword = "qwerty";
+            //string enteredPassword = Console.ReadLine();
+
+            //if (enteredPassword == standartPassword)
+            //{
+            //    accessAllowed = true;
+            //}
+            //else
+            //{
+            //    accessAllowed = false;
+            //}
+
+            //accessAllowed = enteredPassword == standartPassword ? true : false;
+
+            //Console.WriteLine($"access = {accessAllowed}");
+
+            //int inputData = int.Parse(Console.ReadLine());
+
+            //int outputData = (inputData < 0) ? 0 : inputData;
+
+            //Console.WriteLine(outputData);
+            
         }
     }
 }
