@@ -14,6 +14,7 @@ namespace sup
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello, World!");
             //Console.WriteLine("Calculator! Enter the expression!");
             //string expression = Console.ReadLine();
 
@@ -105,6 +106,37 @@ namespace sup
 
 
 
+
+            ////РАБОТА С МАССИВАМИ                                              РАБОТА С МАССИВАМИ
+            //string[] strings = new string[5];
+
+            //int vari;
+            //int sum = 0;
+            //int mini = int.MaxValue;
+            //for (int i = 0; i < strings.Length;)
+            //{
+            //    string enteredNums = Console.ReadLine();
+            //    if (enteredNums == "break" || i > 5) break;
+            //    else
+            //    {
+            //        vari = int.Parse(enteredNums);
+            //        sum = sum + vari;
+            //        strings[i] = enteredNums;
+            //        if (vari < mini)
+            //        {
+            //            mini = vari;
+            //        }
+            //        i++;
+            //    }
+            //}
+
+            //Console.WriteLine();
+            //for (int i = 5; i > 0; i--)
+            //{
+            //    Console.WriteLine(strings[i - 1]);
+            //}
+            //Console.WriteLine($"Summary = {sum}");
+            //Console.WriteLine($"Minimal = {mini}");
         }
     }
 }

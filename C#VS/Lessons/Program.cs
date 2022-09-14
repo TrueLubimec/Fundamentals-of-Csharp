@@ -437,15 +437,21 @@ namespace Lessons
             //int ArrVar = myArray[1];
             //Console.WriteLine(ArrVar);
 
-            
-            int[] oneMoreArray = new int[5] { 1, 5, 5, 2, 5 }; // важно заполнить каждый слот при такой инициализации
-            int[] twoMoreArray = new int[] { 1, 5, 5 }; // так создаётся на столько слотов, сколько указано в фигурных скобках
-            int[] threeMoreArray = new[] { 1, 2, };
-            int[] fourMoreArray = { 1, 2, 3, 4, 555 };
-            int[] fiveMoreArray = Enumerable.Repeat(5, 10).ToArray();
-            int[] sixMoreArray = Enumerable.Range(4, 5).ToArray();
 
-            Console.WriteLine($"{oneMoreArray}\n {twoMoreArray}");
+            //int[] oneMoreArray = new int[5] { 1, 5, 5, 2, 5 }; // важно заполнить каждый слот при такой инициализации
+            //int[] twoMoreArray = new int[] { 1, 5, 5 }; // так создаётся на столько слотов, сколько указано в фигурных скобках
+            //int[] threeMoreArray = new[] { 1, 2, };
+            //int[] fourMoreArray = { 1, 2, 3, 4, 555 };
+            //int[] fiveMoreArray = Enumerable.Repeat(5, 10).ToArray();
+            //int[] sixMoreArray = Enumerable.Range(4, 5).ToArray();
+
+            //int[] anArray = { 1, 2, 3 };
+
+            //for (int i = anArray.Length - 1; i >= 0; i--)
+            //{
+            //    Console.WriteLine(anArray[i]);
+            //}
+
 
 
 
