@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Linq;
 
 namespace Lessons
 {
@@ -400,7 +401,7 @@ namespace Lessons
             //}
 
 
-            /////ТЕРНАРНЫЕ ОПЕРАТОРЫ
+            /////ТРЕНАРНЫЕ ОПЕРАТОРЫ                                                          ТЕРНАРНЫЕ ОПЕРАТОРЫ
 
             //bool accessAllowed;
 
@@ -425,7 +426,29 @@ namespace Lessons
             //int outputData = (inputData < 0) ? 0 : inputData;
 
             //Console.WriteLine(outputData);
+
+
+
+            ////МАССИВЫ                                                                        МАССИВЫ
+            //int[] myArray = new int[10];
+            //myArray[0] = 1;
+            //myArray[1] = 44;
+
+            //int ArrVar = myArray[1];
+            //Console.WriteLine(ArrVar);
+
             
+            int[] oneMoreArray = new int[5] { 1, 5, 5, 2, 5 }; // важно заполнить каждый слот при такой инициализации
+            int[] twoMoreArray = new int[] { 1, 5, 5 }; // так создаётся на столько слотов, сколько указано в фигурных скобках
+            int[] threeMoreArray = new[] { 1, 2, };
+            int[] fourMoreArray = { 1, 2, 3, 4, 555 };
+            int[] fiveMoreArray = Enumerable.Repeat(5, 10).ToArray();
+            int[] sixMoreArray = Enumerable.Range(4, 5).ToArray();
+
+            Console.WriteLine($"{oneMoreArray}\n {twoMoreArray}");
+
+
+
         }
     }
 }
