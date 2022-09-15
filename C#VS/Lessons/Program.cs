@@ -445,7 +445,7 @@ namespace Lessons
             //int[] fiveMoreArray = Enumerable.Repeat(5, 10).ToArray();
             //int[] sixMoreArray = Enumerable.Range(4, 5).ToArray();
 
-            int[] anArray = { 1, 2, 3, 44, 2, 44 };
+            int[] anArray = { 1, 2, 3, 44, 2, 44, 77 };
 
             //for (int i = anArray.Length - 1; i >= 0; i--)
             //{
@@ -454,18 +454,28 @@ namespace Lessons
 
             //Console.WriteLine(anArray.Min());
 
-            Console.WriteLine(anArray.Max());
-            Console.WriteLine(anArray.Where(i => i % 2 == 0).Sum()); // сумма частных
+            //Console.WriteLine(anArray.Max());
+            //Console.WriteLine(anArray.Where(i => i % 2 == 0).Sum()); // сумма частных
+            //int[] cock = anArray.Where(i => i < 70).ToArray();
 
-            int[] result = anArray.Distinct().ToArray(); //только уникальные элементы в массиве
-            Console.WriteLine(result.Length);
+            //int[] result = anArray.Distinct().ToArray(); //только уникальные элементы в массиве
+            //Console.WriteLine(result.Length);
 
-            int[] sorted = anArray.OrderBy(i => i).ToArray(); //Сортировка по возрастанию
-            anArray.OrderByDescending(i => i).ToArray(); //по убыванию
-            
-            Array.Sort(anArray); //у массивов много статический функций
-            int beb = Array.Find(anArray, i => i < 70); //поместит в переменную первую удволетворяющую 
+            //int[] sorted = anArray.OrderBy(i => i).ToArray(); //Сортировка по возрастанию
+            //anArray.OrderByDescending(i => i).ToArray(); //по убыванию
 
+            //Array.Sort(anArray); //у массивов много статический функций
+            //int beb = Array.Find(anArray, i => i < 70); //поместит в переменную первую удволетворяющую 
+            //Array.FindLast(anArray, i => i < 70); //просто поиск с конца
+            //int[] meme = Array.FindAll(anArray, i => i < 70);
+
+            //int bebe = Array.FindIndex(anArray, i => i == 44); //инедкс запрошенного элемента в массиве
+            //int keke = Array.FindLastIndex(anArray, i => i == 44); //просто поиск с конца
+
+            //Array.Reverse(anArray); //порядок на обратный
+
+
+            Console.WriteLine();
         }
     }
 }
