@@ -445,15 +445,26 @@ namespace Lessons
             //int[] fiveMoreArray = Enumerable.Repeat(5, 10).ToArray();
             //int[] sixMoreArray = Enumerable.Range(4, 5).ToArray();
 
-            //int[] anArray = { 1, 2, 3 };
+            int[] anArray = { 1, 2, 3, 44, 2, 44 };
 
             //for (int i = anArray.Length - 1; i >= 0; i--)
             //{
             //    Console.WriteLine(anArray[i]);
             //}
 
+            //Console.WriteLine(anArray.Min());
 
+            Console.WriteLine(anArray.Max());
+            Console.WriteLine(anArray.Where(i => i % 2 == 0).Sum()); // сумма частных
 
+            int[] result = anArray.Distinct().ToArray(); //только уникальные элементы в массиве
+            Console.WriteLine(result.Length);
+
+            int[] sorted = anArray.OrderBy(i => i).ToArray(); //Сортировка по возрастанию
+            anArray.OrderByDescending(i => i).ToArray(); //по убыванию
+            
+            Array.Sort(anArray); //у массивов много статический функций
+            int beb = Array.Find(anArray, i => i < 70); //поместит в переменную первую удволетворяющую 
 
         }
     }
