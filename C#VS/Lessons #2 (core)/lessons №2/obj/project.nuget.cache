@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UucUqQ4y2VLkqhwd2TFGa6ml4rGNYC3ycYcJ8idd1twIPH3Ode2MWsR+WVDpQZDBm8XJqMo1MijZv3k+l700TQ==",
+  "dgSpecHash": "goMMGNmT7dB5qC0XI6cKvKxD++ASEtQgYN23f+DuiBK524Uy780nrwzKhNzZfjnf32zuTEqCz6b62VvP7KzTWA==",
   "success": true,
   "projectFilePath": "D:\\Code\\Codding\\Fundamentals of C++\\C#VS\\Lessons #2 (core)\\lessons №2\\lessons №2.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Lubimec\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.28\\microsoft.netcore.app.host.win-x64.3.1.28.nupkg.sha512",
-    "C:\\Users\\Lubimec\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\Lubimec\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\Lubimec\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

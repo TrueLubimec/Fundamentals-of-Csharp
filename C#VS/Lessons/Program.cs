@@ -475,7 +475,12 @@ namespace Lessons
             //Array.Reverse(anArray); //порядок на обратный
 
 
-            Console.WriteLine();
+            ////ИНДЕКСЫ И ДИАПАЗОНЫ                                                         ИНДЕКСЫ И ДИАПАЗОНЫ
+
+
+            int[] anArray2 = { 1, 2, 3, 221, 33 };
+
+            Console.WriteLine(anArray[^1]);
         }
     }
 }

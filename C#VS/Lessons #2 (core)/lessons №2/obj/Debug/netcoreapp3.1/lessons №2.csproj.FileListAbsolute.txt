@@ -1,0 +1,5 @@
+D:\Code\Codding\Fundamentals of C++\C#VS\Lessons #2 (core)\lessons №2\obj\Debug\netcoreapp3.1\lessons №2.csproj.AssemblyReference.cache
+D:\Code\Codding\Fundamentals of C++\C#VS\Lessons #2 (core)\lessons №2\obj\Debug\netcoreapp3.1\lessons №2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Codding\Fundamentals of C++\C#VS\Lessons #2 (core)\lessons №2\obj\Debug\netcoreapp3.1\lessons №2.AssemblyInfoInputs.cache
+D:\Code\Codding\Fundamentals of C++\C#VS\Lessons #2 (core)\lessons №2\obj\Debug\netcoreapp3.1\lessons №2.AssemblyInfo.cs
+D:\Code\Codding\Fundamentals of C++\C#VS\Lessons #2 (core)\lessons №2\obj\Debug\netcoreapp3.1\lessons №2.csproj.CoreCompileInputs.cache
