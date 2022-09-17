@@ -477,10 +477,25 @@ namespace Lessons
 
             ////ИНДЕКСЫ И ДИАПАЗОНЫ                                                         ИНДЕКСЫ И ДИАПАЗОНЫ
 
+            //Работают ток на .Net Core (Lessons#2)
 
-            int[] anArray2 = { 1, 2, 3, 221, 33 };
 
-            Console.WriteLine(anArray[^1]);
+            ////Двумерный массив                                                            ДВУМЕРНЫЙ МАССИВ
+            int[,] dubArray = new int[3, 5];
+            dubArray[0,3] = 122;
+            Console.WriteLine(dubArray[0,3]);
+            //
+            Console.WriteLine();
+            //
+            int[,] dArray =
+            {
+                { 1, 2,  3, 55, 23 },
+                { 23,54, 12,42, 44},
+                { 33,123,55,233,0},
+                { 5, 75, 89,53, 39}
+            };
+            Console.WriteLine(dArray[2,4]);
+            
         }
     }
 }
