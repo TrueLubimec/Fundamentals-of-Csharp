@@ -495,6 +495,19 @@ namespace Lessons
                 { 5, 75, 89,53, 39}
             };
             Console.WriteLine(dArray[2,4]);
+
+            
+            int count = 0;
+            foreach (var i in dArray)
+            {
+                Console.Write($"{i}\t");
+                count++;
+                if (count >= 5)
+                {
+                    Console.WriteLine();
+                    count = 0;
+                }
+            }
             
         }
     }
