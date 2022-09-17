@@ -445,7 +445,7 @@ namespace Lessons
             //int[] fiveMoreArray = Enumerable.Repeat(5, 10).ToArray();
             //int[] sixMoreArray = Enumerable.Range(4, 5).ToArray();
 
-            int[] anArray = { 1, 2, 3, 44, 2, 44, 77 };
+            //int[] anArray = { 1, 2, 3, 44, 2, 44, 77 };
 
             //for (int i = anArray.Length - 1; i >= 0; i--)
             //{
@@ -481,34 +481,77 @@ namespace Lessons
 
 
             ////Двумерный массив                                                            ДВУМЕРНЫЙ МАССИВ
-            int[,] dubArray = new int[3, 5];
-            dubArray[0,3] = 122;
-            Console.WriteLine(dubArray[0,3]);
-            //
-            Console.WriteLine();
-            //
-            int[,] dArray =
-            {
-                { 1, 2,  3, 55, 23 },
-                { 23,54, 12,42, 44},
-                { 33,123,55,233,0},
-                { 5, 75, 89,53, 39}
-            };
-            Console.WriteLine(dArray[2,4]);
+            //int[,] dubArray = new int[3, 5];
+            //dubArray[0,3] = 122;
+            //Console.WriteLine(dubArray[0,3]);
+            ////
+            //Console.WriteLine();
+            ////
+            //int[,] dArray =
+            //{
+            //    { 1, 2,  3, 55, 23 },
+            //    { 23,54, 12,42, 44},
+            //    { 33,123,55,233,0},
+            //    { 00,123,2,6513,44},
+            //    { 5, 75, 89,53, 39}
+            //};
+            //Console.WriteLine(dArray[2,4]);
 
-            
-            int count = 0;
-            foreach (var i in dArray)
-            {
-                Console.Write($"{i}\t");
-                count++;
-                if (count >= 5)
-                {
-                    Console.WriteLine();
-                    count = 0;
-                }
-            }
-            
+            //Console.WriteLine();
+            //Console.WriteLine(dArray.Rank); //УЗНАТЬ КОЛЛИЧЕСТВО ИЗМЕРЕНИЙ 
+            //Console.WriteLine();
+            //int width = dArray.GetLength(1); //ДЛИНА СТРОКИ (0 - первое измерение, столбы; 1 - ВТОРОЕ ИЗМЕРЕНИЕ, строки)
+            //int height = dArray.GetLength(0);//МОЖНО ОТДЕЛЬНО НЕ ОБЪЯВЛЯТЬ, А СРАЗУ В ЦИКЛЕ ПРОПИСАТЬ
+
+            //СПОСОБ 1 вывод в таблицу
+            //int count = 0;
+            //foreach (var i in dArray)
+            //{
+            //    Console.Write($"{i}\t");
+            //    count++;
+            //    if (count >= width)
+            //    {
+            //        Console.WriteLine();
+            //        count = 0;
+            //    }
+            //}
+
+            // СПОСОБ 2
+            //for (int b = 0; b < height; b++)
+            //{
+            //    for(int x = 0; x < width; x++)
+            //    {
+            //        Console.Write(dArray[b,x] + "\t");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+
+
+            ////ЗАПОЛНЕНИЕ ДВУМЕРНОГО МАССИВА                                               ЗАПОЛНЕНИЕ ДВУМЕРНОГО МАССИВА
+
+            //string[,] dumArray = new string[2, 3];
+
+            //Random random = new Random();
+
+            //for (int y = 0; y < dumArray.GetLength(0); y++)
+            //{
+            //    for (int x = 0; x < dumArray.GetLength(1); x++)
+            //    {
+            //        Console.WriteLine($"Enter the numeber to {y},{x} position");
+            //        dumArray[y, x] = Console.ReadLine();
+            //    }
+            //}
+            //Console.WriteLine();
+            //for (int b = 0; b < dumArray.GetLength(0); b++)
+            //{
+            //    for (int x = 0; x < dumArray.GetLength(1); x++)
+            //    {
+            //        Console.Write(dumArray[b, x] + "\t");
+            //    }
+            //    Console.WriteLine();
+            //}
+
         }
     }
 }
