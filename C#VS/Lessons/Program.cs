@@ -555,12 +555,12 @@ namespace Lessons
 
             //// СТУПЕНЧАТЫЕ(ЗУБЧАТЫЕ) МАССИВЫ                                              СТУПЕНЧАТЫЕ(ЗУБЧАТЫЕ) МАССИВЫ
             //
-            int[][] anArray = new int[3]/* тут столбец основной */[] /* тут сами ступени */; //МАССИВ В МАССИВЕ
+            //int[][] anArray = new int[3]/* тут столбец основной */[] /* тут сами ступени */; //МАССИВ В МАССИВЕ
             // ВСЕГДА НЕОБХОДИМО ВЫДЕЛЯТЬ ПАМЯТЬ ДЛЯ ОСНОВОНОГО МАССИВА, ТАК КАК К НЕМУ ИДЁТ ОБРАЩЕНИЕ ОТ СТУПЕНЕЙ
 
-            anArray[0] = new int[3];// ТО ЕСТЬ ТУТ УЖЕ ОПРЕДЕЛЯЕМ СТУПЕНИ
-            anArray[1] = new int[6];
-            anArray[2] = new int[10];
+            //anArray[0] = new int[3];// ТО ЕСТЬ ТУТ УЖЕ ОПРЕДЕЛЯЕМ СТУПЕНИ
+            //anArray[1] = new int[6];
+            //anArray[2] = new int[10];
 
             //int[,] dubArray = new int[10, 5];
 
@@ -572,25 +572,27 @@ namespace Lessons
 
             //ЗАПОЛНЕНИЕ И ВЫВОД
 
-            Random random = new Random();
+            //Random random = new Random();
 
-            for (int i = 0; i < anArray.Length; i++)
-            {
-                for (int j = 0; j < anArray[i].Length /* ДЛИНА СТУПЕНИ(ВЛОЖЕННОГО МАССИВА) */; j++)
-                {
-                    anArray[i][j] = random.Next(100);
-                }
-            }
+            //for (int i = 0; i < anArray.Length; i++)
+            //{
+            //    for (int j = 0; j < anArray[i].Length /* ДЛИНА СТУПЕНИ(ВЛОЖЕННОГО МАССИВА) */; j++)
+            //    {
+            //        anArray[i][j] = random.Next(100);
+            //    }
+            //}
 
-            for (int i = 0; i < anArray.Length; i++)
-            {
-                for (int j = 0; j < anArray[i].Length /* ДЛИНА СТУПЕНИ(ВЛОЖЕННОГО МАССИВА) */; j++)
-                {
-                    ; Console.Write(anArray[i][j] + "\t");
-                }
-                Console.WriteLine();
-            }
+            //for (int i = 0; i < anArray.Length; i++)
+            //{
+            //    for (int j = 0; j < anArray[i].Length /* ДЛИНА СТУПЕНИ(ВЛОЖЕННОГО МАССИВА) */; j++)
+            //    {
+            //        ; Console.Write(anArray[i][j] + "\t");
+            //    }
+            //    Console.WriteLine();
+            //}
 
+
+            ////ТРЁХМЕРНЫЕ МАССИВЫ                                                           ТРЁХМЕРНЫЕ МАССИВЫ
         }
     }
 }
