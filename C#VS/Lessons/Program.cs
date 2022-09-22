@@ -593,6 +593,90 @@ namespace Lessons
 
 
             ////ТРЁХМЕРНЫЕ МАССИВЫ                                                           ТРЁХМЕРНЫЕ МАССИВЫ
+            ///
+            //int[,,] /* */ anArray = new int[2,/* СТРАНИЦА(Z) */ 5,/* СТРОКА(Y) */ 4 /* СТОЛБЕЦ(X) */];
+
+            //int[,,] anIntArray =
+            //{
+            //    {
+            //        {1, 2, 3, 4},
+            //        {5,12,32,11 }
+            //    },
+            //    {
+            //        {2, 24,74,72 },
+            //        {51,50,64,72 }
+            //    }
+
+            //};
+
+            //Random random = new Random();
+
+            //for (int i = 0; i < anArray.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < anArray.GetLength(1); j++)
+            //    {
+            //        for (int b = 0; b < anArray.GetLength(2); b++)
+            //        {
+            //            anArray[i,j,b] = random.Next(100);
+            //        }
+            //    }
+            //}
+            //Console.WriteLine();
+            //for (int i = 0; i < anArray.GetLength(0); i++)
+            //{
+            //    Console.WriteLine("==================================");
+            //    Console.WriteLine($"Page #{i + 1}");
+            //    for (int j = 0; j < anArray.GetLength(1); j++)
+            //    {
+            //        for (int b = 0; b < anArray.GetLength(2); b++)
+            //        {
+            //            Console.Write(anArray[i,j,b] + "\t");
+            //        }
+            //        Console.WriteLine();
+            //    }
+            //    Console.WriteLine("==================================");
+            //}
+
+            //ЗУБЧАТЫЕ ТРЁХМЕРНЫЕ МАССИВЫ
+
+            //Random random = new Random();
+
+            //int[][][] zubArray = new int[random.Next(2, 6)][][];
+
+            //for (int i = 0; i < zubArray.Length; i++)
+            //{
+            //    zubArray[i] = new int[random.Next(2, 6)][];
+
+            //    for (int a = 0; a < zubArray[i].Length; a++)
+            //    {
+            //        zubArray[i][a] = new int[random.Next(2, 6)];
+
+            //        for (int b = 0; b < zubArray[i][a].Length; b++)
+            //        {
+            //            zubArray[i][a][b] = random.Next(100);
+            //        }
+
+            //    }
+            //}
+            //Console.WriteLine();
+            //for (int i = 0; i < zubArray.Length; i++)
+            //{
+            //    Console.WriteLine("==================================");
+            //    Console.WriteLine($"Page #{i + 1}");
+
+            //    for (int a = 0; a < zubArray[i].Length; a++)
+            //    {
+
+            //        for (int b = 0; b < zubArray[i][a].Length; b++)
+            //        {
+            //            Console.Write(zubArray[i][a][b] + "\t");
+            //        }
+            //        Console.WriteLine();
+
+            //    }
+            //    Console.WriteLine("==================================");
+            //}
+
         }
     }
 }
