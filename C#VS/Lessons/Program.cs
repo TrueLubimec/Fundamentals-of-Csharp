@@ -6,9 +6,43 @@ namespace Lessons
 {
     internal class Program
     {
+        ////ФУНКЦИИ И МЕТОДЫ                                                                ФУНКЦИИ И МЕТОДЫ
+
+        //Создавать можно, где угодно. НО должен быть частью класса!!!!!!!!!!!!!
+
+        // модификатор тип_возвращаемого_значения название_метода(параметры)
+        // {
+        //      тело метода
+        // }
+        // void используется, если не нужно возвращать.
+
+        //static int summ(int var1, int var2)
+        //{
+        //    int res = var1 + var2;
+        //    return res;
+        //}
+        //static void printer()
+        //{
+        //    Console.WriteLine("HURrAYyyYy");
+        //}
+        //static void PrRes(int res)
+        //{
+        //    Console.WriteLine(res);
+        //}
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //-------------------------------------------------
+            //функции
+
+            //Console.WriteLine("Hello, World!");
+            //int var1 = int.Parse(Console.ReadLine());
+            //int var2 = int.Parse(Console.ReadLine());
+
+            //PrRes(summ(var1, var2));
+            //printer();
+
+            //=================================================
 
             //string str = "5";
             //string str2 = "2";
@@ -676,6 +710,7 @@ namespace Lessons
             //    }
             //    Console.WriteLine("==================================");
             //}
+
 
         }
     }
