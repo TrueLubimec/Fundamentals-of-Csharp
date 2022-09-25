@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Net.Http.Headers;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Runtime.Serialization.Formatters;
 using System.Text;
 using System.Threading;
@@ -137,6 +139,51 @@ namespace sup
             //}
             //Console.WriteLine($"Summary = {sum}");
             //Console.WriteLine($"Minimal = {mini}");
+
+
+            //// СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)                                                  СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)
+            //char Lol = char.Parse(Console.ReadLine());
+            //int times = int.Parse(Console.ReadLine());
+            //Console.WriteLine();
+            //Printer(Lol, times);
+
+
+            int[] anArray = randomArray(5, -10, 20);
+            int bobina = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+            Console.WriteLine(Jopa(anArray, bobina));
+        }
+
+
+        //// СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)                                                      СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)
+        
+
+        //static void Printer(char enteredPhrase, uint enteredTimes)
+        //{
+        //    for (int i = 0; i < enteredTimes; i++)
+        //    {
+        //        Console.WriteLine(enteredPhrase);
+        //    }
+        //}
+
+        static int[] randomArray (uint lengthOfArray, int minVal, int maxVal)
+        {
+            int[] retArray = new int[lengthOfArray];
+            Random random = new Random();
+            for (int a = 0; a < lengthOfArray; a ++)
+                retArray[a] = random.Next(minVal, maxVal);
+            return retArray;
+        }
+        static int Jopa(int[] dubArray ,int enteredNumber)
+        {
+            for (int a = 0; a < dubArray.Length; a++)
+            {
+                if (dubArray[a] == enteredNumber)
+                {
+                    return a;
+                }
+            }
+            return -1;
         }
     }
 }
