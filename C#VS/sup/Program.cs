@@ -142,16 +142,17 @@ namespace sup
 
 
             //// СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)                                                  СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)
+            
             //char Lol = char.Parse(Console.ReadLine());
             //int times = int.Parse(Console.ReadLine());
             //Console.WriteLine();
             //Printer(Lol, times);
 
 
-            int[] anArray = randomArray(5, -10, 20);
-            int bobina = int.Parse(Console.ReadLine());
-            Console.WriteLine();
-            Console.WriteLine(Jopa(anArray, bobina));
+            //int[] anArray = randomArray(5, -10, 20);
+            //int bobina = int.Parse(Console.ReadLine());
+            //Console.WriteLine();
+            //Console.WriteLine(Jopa(anArray, bobina));
         }
 
 
@@ -166,24 +167,24 @@ namespace sup
         //    }
         //}
 
-        static int[] randomArray (uint lengthOfArray, int minVal, int maxVal)
-        {
-            int[] retArray = new int[lengthOfArray];
-            Random random = new Random();
-            for (int a = 0; a < lengthOfArray; a ++)
-                retArray[a] = random.Next(minVal, maxVal);
-            return retArray;
-        }
-        static int Jopa(int[] dubArray ,int enteredNumber)
-        {
-            for (int a = 0; a < dubArray.Length; a++)
-            {
-                if (dubArray[a] == enteredNumber)
-                {
-                    return a;
-                }
-            }
-            return -1;
+        //static int[] randomArray (uint lengthOfArray, int minVal, int maxVal)
+        //{
+        //    int[] retArray = new int[lengthOfArray];
+        //    Random random = new Random();
+        //    for (int a = 0; a < lengthOfArray; a ++)
+        //        retArray[a] = random.Next(minVal, maxVal);
+        //    return retArray;
+        //}
+        //static int Jopa(int[] dubArray ,int enteredNumber)
+        //{
+        //    for (int a = 0; a < dubArray.Length; a++)
+        //    {
+        //        if (dubArray[a] == enteredNumber)
+        //        {
+        //            return a;
+        //        }
+        //    }
+        //    return -1;
         }
     }
 }
