@@ -671,7 +671,7 @@ namespace Lessons
             //    Console.WriteLine("==================================");
             //}
 
-            //ЗУБЧАТЫЕ ТРЁХМЕРНЫЕ МАССИВЫ
+            //ЗУБЧАТЫЕ ТРЁХМЕРНЫЕ МАССИВЫ                                                   ЗУБЧАТЫЕ ТРЁХМЕРНЫЕ МАССИВЫ
 
             //Random random = new Random();
 
@@ -710,6 +710,36 @@ namespace Lessons
             //    }
             //    Console.WriteLine("==================================");
             //}
+
+            //// ПЕРЕГРУЗКА МЕТОДОВ                                                         ПЕРЕГРУЗКА МЕТОДОВ
+
+            //ОН по сути даёт возможность реализовывать метод разными способами
+
+            ///// <summary>
+            ///// ТЕСТОВОЕ ОПИСАНИЕ
+            ///// </summary>
+            ///// <param name="a"></param>
+            ///// <param name="b"></param>
+            ///// <returns></returns>
+            //static int Sum(int a, int b)
+            //{
+            //    // ТРИ слэша дают возможность описания кастомных методов
+
+            //    int res = a + b;
+            //    return res;
+            //}
+            //static int Sum(int a, int b, int c)
+            //{
+            //    int res = a + b + c;
+            //    return res;
+            //}
+            //static double Sum(double a, double b)
+            //{
+            //    return a + b;
+            //}
+            //Console.WriteLine(Sum(55, 11));
+
+            //// ОБЛАСТИ ВИДИМОСТИ | КОНТЕКСТ ПЕРЕМЕННОЙ
 
 
         }
