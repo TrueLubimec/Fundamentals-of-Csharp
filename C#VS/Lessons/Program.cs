@@ -782,6 +782,7 @@ namespace Lessons
             //str ??= string.Empty; //роюит на версии 8.0 и выше (тип фрэймворка)
 
             //Console.WriteLine($"The length of the string: {str.Length}");
+            
 
             
 
