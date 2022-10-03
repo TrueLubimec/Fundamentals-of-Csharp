@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Dynamic;
 using System.Globalization;
 using System.Linq;
 
@@ -769,9 +770,21 @@ namespace Lessons
 
             // но можно сдлеать через оператор 
 
-            string strr = null;
+            //string strr = null;
 
-            Console.WriteLine(strr ?? "");
+            //Console.WriteLine(strr ?? " нет данных ");
+
+
+            //// ОПЕРАТОР ПРИСВАИВАНИЯ СО ЗНАЧЕНИЕМ NULL                                    ОПЕРАТОР ПРИСВАИВАНИЯ СО ЗНАЧЕНИЕМ NULL
+
+            //string str = null;
+
+            //str ??= string.Empty; //роюит на версии 8.0 и выше (тип фрэймворка)
+
+            //Console.WriteLine($"The length of the string: {str.Length}");
+
+            
+
         }
     }
 }
