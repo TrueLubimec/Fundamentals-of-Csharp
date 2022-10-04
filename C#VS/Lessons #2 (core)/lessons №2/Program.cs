@@ -1,53 +1,59 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
+using System.Text;
 
 namespace Kontur
 {
     class Program
     {
-        static void Main(string[] argc)
+        public static void Main()
         {
-
-            //ЗАДАЧА Е
-
             int n = int.Parse(Console.ReadLine());
-            string[] adress = new string[0] { };
-            int[] num = new int[0] { };
-            var dict = new Dictionary<int, string>();
-            int keys = 0;
+            var builder = new StringBuilder();
+            var data = new Dictionary<string, List<int>>();
             for (int i = 0; i < n; i++)
             {
-                Array.Resize(ref adress, adress.Length + 1);
-                Array.Resize(ref num, num.Length + 1);
-                adress[i] = Console.ReadLine();
-                num[i] = int.Parse(Console.ReadLine());
-                dict.Add(keys, adress[i]);
-                keys++;
+                var s = Console.ReadLine();
+                int index = Enumerable.Range(0, s.Length).First(j => char.IsDigit(s[j]));
+                var name = s.Substring(0, index);
+                var number = int.Parse(s.Substring(index));
+                if (!data.ContainsKey(name))
+                    data[name] = new List<int>();
+                data[name].Add(number);
             }
 
-            string[] names = new string[0] { };
-            Console.WriteLine();
-            int sheets = int.Parse(Console.ReadLine());
-            for (int i = 0; sheets > 0; sheets--, i++)
+            var dataQueues = data.ToDictionary
+            (
+                kvp => kvp.Key,
+                kvp => new Queue<int>(kvp.Value.OrderBy(x => x))
+            );
+
+            var firstFree = new Dictionary<string, int>();
+            int q = int.Parse(Console.ReadLine());
+            for (int i = 0; i < q; i++)
             {
-                int count = 0;
-                Array.Resize(ref names, names.Length + 1);
-                names[i] = Console.ReadLine();
-                foreach (string entered in dict.Values)
+                var query = Console.ReadLine();
+                var candidate = firstFree.ContainsKey(query) ? firstFree[query] : 1;
+
+                if (dataQueues.ContainsKey(query))
                 {
-                    if (names[i] == entered | num[i] == i)
+                    var queue = dataQueues[query];
+                    while (queue.Count > 0 && queue.Peek() == candidate)
                     {
-                        count++;
+                        candidate++;
+                        queue.Dequeue();
                     }
-                    Console.WriteLine(count);
                 }
+
+                builder.AppendLine(candidate.ToString());
+                firstFree[query] = candidate + 1;
             }
 
-
+            Console.Write(builder);
         }
     }
 }
-////ЗАДАЧА А
+////ЗАДАЧА А                                                                                    ЗАДАЧА А
 
 //string Number = Console.ReadLine();
 //int[] numbersArray = { };
@@ -96,7 +102,7 @@ namespace Kontur
 //Console.WriteLine(k);
 
 
-////РЕШЕНИЕ ЖЮРИ:
+////РЕШЕНИЕ ЖЮРИ:                                                                               РЕШЕНИЕ ЖЮРИ
 //public static void Main()
 //{
 //    var s = Console.ReadLine();
@@ -107,30 +113,123 @@ namespace Kontur
 //}
 
 
+////ЗАДАЧА C
 
-////ЗАДАЧА Б
-
-//int[] pares = new int[8] { 7, 1, -2, 1, 2, 3, -1, 0};
-//int enteredVar = int.Parse(Console.ReadLine());
-//if (enteredVar >= 1 && enteredVar <= 999)
+//public static void Main()
 //{
-//    pares[^1] = enteredVar;
-//    Console.WriteLine();
-
-//    foreach (int i in pares)
+//    int n = int.Parse(Console.ReadLine());
+//    var table = new List<(string, int)>();
+//    for (int i = 0; i < n; i++)
 //    {
-//    Console.WriteLine(i);
+//        var tokens = Console.ReadLine().Split();
+//        table.Add((tokens[0], int.Parse(tokens[1])));
 //    }
+
+//    var teams = Console.ReadLine().Split('-');
+
+//    int res1 = Solve(table.ToArray(), teams[0], 3, teams[1], 0);
+//    int res2 = Solve(table.ToArray(), teams[0], 1, teams[1], 1);
+//    int res3 = Solve(table.ToArray(), teams[0], 0, teams[1], 3);
+//    Console.WriteLine(res1 + " " + res2 + " " + res3);
 //}
 
-
-////ЗАДАЧА В
-
-//Random random = new Random();
-//int teams = random.Next(2, 20);
-//Console.WriteLine(teams);
-//int count = 1;
-//for (;count <= teams; count++)
+//private static int Solve((string, int)[] table, string team1, int p1, string team2, int p2)
 //{
-//    Console.WriteLine(count);
+//    int index1 = Enumerable.Range(0, table.Length).First(i => table[i].Item1 == team1);
+//    table[index1] = (table[index1].Item1, table[index1].Item2 + p1);
+
+//    int index2 = Enumerable.Range(0, table.Length).First(i => table[i].Item1 == team2);
+//    table[index2] = (table[index2].Item1, table[index2].Item2 + p2);
+
+//    table = table.OrderByDescending(item => item.Item2).ThenBy(item => item.Item1).ToArray();
+//    return Enumerable.Range(0, table.Length).First(i => table[i].Item1 == team1) + 1;
 //}
+
+
+
+////ЗАДАЧА D                                                                                    ЗАДАЧА D
+
+//var ints = Console.ReadLine()
+//    .Split()
+//    .Select(int.Parse)
+//    .ToArray();
+//int n = ints[0];
+//int m = ints[1];
+//var map = new string[n];
+//for (int i = 0; i < n; i++)
+//    map[i] = Console.ReadLine();
+
+//var maxPrefix = new int[n + 1][];
+//for (int i = 0; i <= n; i++)
+//    maxPrefix[i] = new int[m + 1];
+
+//for (int i = 1; i < n; i++)
+//    for (int j = 1; j < m; j++)
+//    {
+//        if (map[i][j] == '*')
+//            maxPrefix[i][j] = 0;
+//        else
+//            maxPrefix[i][j] = maxPrefix[i][j - 1] + 1;
+//    }
+
+//int max = 0;
+//for (int i = 1; i + 1 < n; i++)
+//    for (int j = 1; j + 1 < m; j++)
+//        if (map[i][j] == '.')
+//        {
+//            int width = n * m;
+//            for (int h = i; h > 0; h--)
+//            {
+//                width = Math.Min(maxPrefix[h][j], width);
+//                if (width * (i - h + 1) > max)
+//                    max = width * (i - h + 1);
+//            }
+//        }
+
+//Console.WriteLine(max);
+
+
+////ЗАДАЧА E                                                                                    ЗАДАЧА E
+
+//int n = int.Parse(Console.ReadLine());
+//var builder = new StringBuilder();
+//var data = new Dictionary<string, List<int>>();
+//for (int i = 0; i < n; i++)
+//{
+//    var s = Console.ReadLine();
+//    int index = Enumerable.Range(0, s.Length).First(j => char.IsDigit(s[j]));
+//    var name = s.Substring(0, index);
+//    var number = int.Parse(s.Substring(index));
+//    if (!data.ContainsKey(name))
+//        data[name] = new List<int>();
+//    data[name].Add(number);
+//}
+
+//var dataQueues = data.ToDictionary
+//(
+//    kvp => kvp.Key,
+//    kvp => new Queue<int>(kvp.Value.OrderBy(x => x))
+//);
+
+//var firstFree = new Dictionary<string, int>();
+//int q = int.Parse(Console.ReadLine());
+//for (int i = 0; i < q; i++)
+//{
+//    var query = Console.ReadLine();
+//    var candidate = firstFree.ContainsKey(query) ? firstFree[query] : 1;
+
+//    if (dataQueues.ContainsKey(query))
+//    {
+//        var queue = dataQueues[query];
+//        while (queue.Count > 0 && queue.Peek() == candidate)
+//        {
+//            candidate++;
+//            queue.Dequeue();
+//        }
+//    }
+
+//    builder.AppendLine(candidate.ToString());
+//    firstFree[query] = candidate + 1;
+//}
+
+//Console.Write(builder);
