@@ -25,10 +25,11 @@ namespace WinFormsApp1
             //Console.WriteLine($"Amount: {MyArray.Length}");
 
 
-            //// ОПЕРАТОР УСЛОВНОГО NULL
+            //// ОПЕРАТОР УСЛОВНОГО NULL                                                    ОПЕРАТОР УСЛОВНОГО NULL
 
-            int[] anArray = { };
-            Console.WriteLine($"Amount of elements: {anArray?.Length ?? 0}"); //сначала проверяет на NULL и подставляет вместо длины NULL. Если NULL - то выводит 0.
+            //int[] anArray = { };
+            //Console.WriteLine($"Amount of elements: {anArray?.Length ?? 0}"); //сначала проверяет на NULL и подставляет вместо длины NULL. Если NULL - то выводит 0.
+
 
         }
     }
