@@ -1,6 +1,6 @@
 namespace WinFormsApp1
 {
-    internal static class Program
+    internal static class WinForm
     {
         /// <summary>
         ///  The main entry point for the application.
@@ -37,13 +37,51 @@ namespace WinFormsApp1
             //Foo(ref a);
 
             //в новых верси€х €зыка можно создавать ссылочные локальные переменные.
-            int[] anArray = { 1, 2, 4 };
-            ref int Aref = ref anArray[0];
+            //int[] anArray = { 1, 2, 4 };
+            //ref int Aref = ref anArray[0];
+
+
+            int[] anArray = new int[5];
+            Random random = new Random();
+            for (int i = 0; i < anArray.Length; i++)
+            {
+                anArray[i] = random.Next(1, 10);
+            }
+            Array.Resize(ref anArray, anArray.Length - 4);
+            for (int i = 0; i < anArray.Length; i++)
+                Console.WriteLine(anArray[i]);
+
+            int var1 = int.Parse(Console.ReadLine());
+            int inserted = int.Parse(Console.ReadLine());
+            Jopa(ref anArray, var1, inserted);
+            for (int i = 0; i < anArray.Length; i++)
+                Console.WriteLine(anArray[i]);
         }
+
+        static ref int Jopa(ref int[] anArray, int var1, int inserted)
+        {
+            anArray[var1] = inserted;
+            return ref anArray[var1];
+        }
+        static ref int Jopa(ref int[] anArray, string place, int inserted)
+        {
+            if (place == "end")
+            {
+                anArray[^1] = inserted;
+                return ref anArray[^1];
+            }
+            else if (place == "start")
+            {
+                anArray[1] = inserted;
+                return ref anArray[1];
+            }
+            return ref anArray[0];
+        }
+    }
+        
         //// Ћё„≈¬ќ≈ —Ћќ¬ќ REF                                                           Ћё„≈¬ќ≈ —Ћќ¬ќ REF
         //static void Foo(ref int a) //через ref передаЄтс€ по ссылка ,а не значению, т.е. не копируетс€ а передаЄт само значенме по координатам в пам€ти
         //{
         //    a = -5;
         //}
-    }
 }

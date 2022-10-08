@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace sup
 {
-    internal class Program
+    internal class Extra
     {
         static void Main(string[] args)
         {
@@ -142,7 +142,7 @@ namespace sup
 
 
             //// СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)                                                  СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)
-            
+
             //char Lol = char.Parse(Console.ReadLine());
             //int times = int.Parse(Console.ReadLine());
             //Console.WriteLine();
@@ -153,11 +153,12 @@ namespace sup
             //int bobina = int.Parse(Console.ReadLine());
             //Console.WriteLine();
             //Console.WriteLine(Jopa(anArray, bobina));
+
         }
 
 
         //// СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)                                                      СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)
-        
+
 
         //static void Printer(char enteredPhrase, uint enteredTimes)
         //{
@@ -185,6 +186,7 @@ namespace sup
         //        }
         //    }
         //    return -1;
-        
+
     }
+    
 }
