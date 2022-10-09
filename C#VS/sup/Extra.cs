@@ -154,8 +154,32 @@ namespace sup
             //Console.WriteLine();
             //Console.WriteLine(Jopa(anArray, bobina));
 
-        }
+            
+            ////ДОМАШКА ПО УДАЛЕНИЮ ЭЛЕМЕНТОВ                                               УДАЛЕНИЕ ЭЛЕМЕНТОВ
+            
+            //int[] anArray = { 1, 2, 3 };
+            //delLastEl(ref anArray);
+            //delFirstEl(ref anArray);
+            //    for (int i = 0; i<anArray.Length; i++)
+            //        Console.WriteLine(anArray[i]);
+            }
 
+        //static void delFirstEl(ref int[] anArray)
+        //{
+        //    delElem(ref anArray, 0);
+        //}
+        //static void delLastEl(ref int[] anArray)
+        //{
+        //    delElem(ref anArray, anArray.Length - 1);
+        //}
+        //static void delElem(ref int[] anArray, int index)
+        //{
+        //    int[] extraArray = new int[anArray.Length - 1];
+        //    for (int i = 0; i < index; i++)
+        //        extraArray[i] = anArray[i];
+        //    for (int a = index, len = anArray.Length - 1; a < len; a++)
+        //        extraArray[a] = anArray[a + 1];
+        //    anArray = extraArray;
 
         //// СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)                                                      СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)
 
@@ -186,6 +210,7 @@ namespace sup
         //        }
         //    }
         //    return -1;
+
 
     }
     
