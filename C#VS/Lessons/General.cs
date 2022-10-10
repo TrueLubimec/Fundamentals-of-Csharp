@@ -821,15 +821,36 @@ namespace Lessons
             // Позволяет не делать перегрузку метода - т.е. передавать от 0 - до
             // множества элементов
 
-            parara("Fetish", 12, 45.5f, false);
-        }
-        static void parara (params object[] parameters)
-        {
-            string message = "Data type {0}, value {1}";
+            //parara("Fetish", 12, 45.5f, false);
 
-            foreach (var parameter in parameters)
-            {
-                Console.WriteLine(message, parameter.GetType(), parameter);
+            //static void parara(params object[] parameters)
+            //{
+            //    string message = "Data type {0}, value {1}";
+
+            //    foreach (var parameter in parameters)
+            //    {
+            //        Console.WriteLine(message, parameter.GetType(), parameter);
+            //    }
+            //}
+
+
+            ////НЕОБЯЗАТЕЛЬНЫЕ ПАРАМЕТРЫ МЕТОДА                                             МЕТОДЫ ПО УМОЛЧАНИЮ
+            //  
+            //Suka(14, 32);
+            //static int Suka(int a, int b, bool enableLogging = false) //т.е. мы можем указать значение по умолчанию и тогда необязательно будет его передавать
+            //{
+            //    int result = a + b;
+
+            //    if (enableLogging)
+            //    {
+            //        Console.WriteLine($"Значение a = {a}");
+            //        Console.WriteLine($"Значение b = {b}");
+            //        Console.WriteLine($"Result: {result}");
+            //    }
+            //    return result;
+
+
+            
             }
         }
     }
