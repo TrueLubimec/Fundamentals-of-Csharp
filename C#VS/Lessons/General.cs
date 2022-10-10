@@ -848,10 +848,27 @@ namespace Lessons
             //        Console.WriteLine($"Result: {result}");
             //    }
             //    return result;
+            //}
 
 
-            
-            }
+            ////ИМЕНОВАННЫЕ ПАРАМЕТРЫ                                                       ИМЕНОВАННЫЕ ПАРАМЕТРЫ
+
+            //int bebra = Suka(b: 14, a: 32); //т.е. мы можем не идти по порядку, а указывать при вызове параметр и присваемое значение
+            //static int Suka(int a, int b, bool enableLogging = false)
+            //{
+            //    int result = a + b;
+
+            //    if (enableLogging)
+            //    {
+            //        Console.WriteLine($"Значение a = {a}");
+            //        Console.WriteLine($"Значение b = {b}");
+            //        Console.WriteLine($"Result: {result}");
+            //    }
+            //    return result;
+            //}
+
+
+ 
         }
     }
-}
+}   
