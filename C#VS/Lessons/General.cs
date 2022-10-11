@@ -1,7 +1,10 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Dynamic;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices;
+using System.Threading;
 
 namespace Lessons
 {
@@ -868,7 +871,58 @@ namespace Lessons
             //}
 
 
- 
+            ////ЧТО ТАКОЕ РЕКУРСИЯ C#                                                       ЧТО ТАКОЕ РЕКУРСИЯ C#
+            // вызов внутри цика этот же цикл.
+            // Всё, что может цикл - может рекурсия.
+            // Важно создавать условия выхода, или цикл будет бесконечным, а стэк перепонится.
+
+            //Rec(0);
+
+            //static void Rec(int i)
+            //{
+            //Thread.Sleep(300);
+            //Console.WriteLine("Recursion");
+            //Rec();
+            //Console.WriteLine(i);
+            //if (i >= 3)
+            //    return;
+            //i++;
+            //Rec(i);
+            //}
+
+
+        //    Item aboba = InitItem();
+        //    Print(aboba);
+
+        //class Item
+        //{
+        //    public int Value { get; set; }
+        //    public Item Child { get; set; } // Тут включает сам себя
+        //}
+        //static Item InitItem()
+        //{
+        //    return new Item()
+        //    {
+        //        Value = 5,
+        //        Child = new Item()
+        //        {
+        //            Value = 10,
+        //            Child = new Item()
+        //            {
+        //                Value = 20,
+        //            }
+        //        }
+        //    };
+        //}
+
+        //static void Print(Item aboba)
+        //{
+        //    if (aboba != null)
+        //    {
+        //        Console.WriteLine(aboba.Value);
+        //        Print(aboba.Child); // Рекурсия чтобы всё вызвать
+        //    }
+        //}
         }
     }
 }   
