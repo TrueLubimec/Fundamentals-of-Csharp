@@ -154,64 +154,105 @@ namespace sup
             //Console.WriteLine();
             //Console.WriteLine(Jopa(anArray, bobina));
 
-            
+
             ////ДОМАШКА ПО УДАЛЕНИЮ ЭЛЕМЕНТОВ                                               УДАЛЕНИЕ ЭЛЕМЕНТОВ
-            
+
             //int[] anArray = { 1, 2, 3 };
             //delLastEl(ref anArray);
             //delFirstEl(ref anArray);
             //    for (int i = 0; i<anArray.Length; i++)
             //        Console.WriteLine(anArray[i]);
-            }
+            //static void delFirstEl(ref int[] anArray)
+            //{
+            //    delElem(ref anArray, 0);
+            //}
+            //static void delLastEl(ref int[] anArray)
+            //{
+            //    delElem(ref anArray, anArray.Length - 1);
+            //}
+            //static void delElem(ref int[] anArray, int index)
+            //{
+            //    int[] extraArray = new int[anArray.Length - 1];
+            //    for (int i = 0; i < index; i++)
+            //        extraArray[i] = anArray[i];
+            //    for (int a = index, len = anArray.Length - 1; a < len; a++)
+            //        extraArray[a] = anArray[a + 1];
+            //    anArray = extraArray;
 
-        //static void delFirstEl(ref int[] anArray)
-        //{
-        //    delElem(ref anArray, 0);
-        //}
-        //static void delLastEl(ref int[] anArray)
-        //{
-        //    delElem(ref anArray, anArray.Length - 1);
-        //}
-        //static void delElem(ref int[] anArray, int index)
-        //{
-        //    int[] extraArray = new int[anArray.Length - 1];
-        //    for (int i = 0; i < index; i++)
-        //        extraArray[i] = anArray[i];
-        //    for (int a = index, len = anArray.Length - 1; a < len; a++)
-        //        extraArray[a] = anArray[a + 1];
-        //    anArray = extraArray;
-
-        //// СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)                                                      СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)
+            //// СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)                                                      СОЗДАНИЕ КЛАССОВ(МЕТОДОВ)
 
 
-        //static void Printer(char enteredPhrase, uint enteredTimes)
-        //{
-        //    for (int i = 0; i < enteredTimes; i++)
-        //    {
-        //        Console.WriteLine(enteredPhrase);
-        //    }
-        //}
+            //static void Printer(char enteredPhrase, uint enteredTimes)
+            //{
+            //    for (int i = 0; i < enteredTimes; i++)
+            //    {
+            //        Console.WriteLine(enteredPhrase);
+            //    }
+            //}
 
-        //static int[] randomArray (uint lengthOfArray, int minVal, int maxVal)
-        //{
-        //    int[] retArray = new int[lengthOfArray];
-        //    Random random = new Random();
-        //    for (int a = 0; a < lengthOfArray; a ++)
-        //        retArray[a] = random.Next(minVal, maxVal);
-        //    return retArray;
-        //}
-        //static int Jopa(int[] dubArray ,int enteredNumber)
-        //{
-        //    for (int a = 0; a < dubArray.Length; a++)
-        //    {
-        //        if (dubArray[a] == enteredNumber)
-        //        {
-        //            return a;
-        //        }
-        //    }
-        //    return -1;
+            //static int[] randomArray (uint lengthOfArray, int minVal, int maxVal)
+            //{
+            //    int[] retArray = new int[lengthOfArray];
+            //    Random random = new Random();
+            //    for (int a = 0; a < lengthOfArray; a ++)
+            //        retArray[a] = random.Next(minVal, maxVal);
+            //    return retArray;
+            //}
+            //static int Jopa(int[] dubArray, int enteredNumber)
+            //{
+            //    for (int a = 0; a < dubArray.Length; a++)
+            //    {
+            //        if (dubArray[a] == enteredNumber)
+            //        {
+            //            return a;
+            //        }
+            //    }
+            //    return -1;
+            //}
 
+            int[] anArray = { 0, 1, 2, 3, 4, 5 };
+            int leng = anArray.Length - 1;
+            int sum = 0;
+            int amount = 0;
+
+            PrintArrayElements(in anArray, leng);
+            Console.WriteLine("---------------------");
+
+            AmountElements(in anArray, leng,ref amount);
+            Console.WriteLine(amount);
+            Console.WriteLine("---------------------");
+
+            SumElements(in anArray, ref sum, leng);
+            Console.WriteLine(sum);
+            Console.WriteLine("---------------------");
+        }
+        static void PrintArrayElements(in int[] anArray, int leng)
+        {
+            Console.WriteLine(anArray[leng]);
+            leng--;
+            if (leng <= 0)
+                return;
+            PrintArrayElements(in anArray, leng);
+        }
+
+        static void AmountElements(in int[] anArray, int leng, ref int amount)
+        {
+            if (leng < 0)
+                return;
+            amount++;
+            leng--;
+            AmountElements(in anArray, leng,ref amount);
+        }
+
+        static void SumElements (in int[] anArray, ref int sum, int leng)
+        {
+            if (leng < 0)
+                return;
+            int var = anArray[leng];
+            leng--;
+            sum += var;
+            SumElements(in anArray, ref sum, leng);
+        }
 
     }
-    
 }
