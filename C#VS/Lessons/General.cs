@@ -4,6 +4,7 @@ using System.Dynamic;
 using System.Globalization;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using System.Threading;
 
 namespace Lessons
@@ -960,7 +961,46 @@ namespace Lessons
 
 
 
+            ////АРИФМЕТИЧЕСКОЕ ПЕРЕПОЛНЕНИЕ                                                 АРИФМЕТИЧЕСКОЕ ПЕРЕПОЛНЕНИЕ
 
+            //Если переполнится предел, то он выдаст другое значение в зависимости от границы.
+            // тип если из byte со значением 1 вычесть 2 - то получится 255.
+
+            // CHECKED и UNCHECKED
+            // для проверки переполнения
+            // Чтобы добавить на уровне проекта - то заходим в найстройки Проекта(замедляет проект).
+            // Можем использовать ключевое слово checked, чтобы не на весь проект накидывать нагрузку
+            //byte agr = 1;
+            //byte dem = 2;
+            //agr = checked((byte)(agr - dem)); // Будет давать ошибку.
+            //checked
+            //{
+            //    // И сюда закидывать на проверку всё.
+            //}
+            //unchecked - если на весь проект стоит проверка (инвертированный прикол)
+
+            //Чтобы не давало ошибку, можно юзать следующее:
+            //try
+            //{
+            //    agr = checked((byte)(agr - dem));
+            //    Console.WriteLine(agr);
+            //}
+            //catch(Exception)
+            //{
+            //    Console.WriteLine("э,зачем так делаешь");
+            //}
+
+            // У double и float нет переполнения!!!
+            //double aboba = 1.0 / 0.0;
+            //Console.WriteLine(double.IsInfinity(aboba)); //True
+
+            //double buka = 0.0 / 0.0;
+            //Console.WriteLine(double.IsNaN(buka)); //True
+
+            //double las = double.MaxValue + double.MaxValue;
+            //Console.WriteLine(double.IsInfinity(las)); //True
+
+            // decimal вообще похую на проверки и он даёт всегда ошибку.
         }
     }
 }   
