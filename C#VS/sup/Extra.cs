@@ -210,49 +210,52 @@ namespace sup
             //    return -1;
             //}
 
-            int[] anArray = { 0, 1, 2, 3, 4, 5 };
-            int leng = anArray.Length - 1;
-            int sum = 0;
-            int amount = 0;
+            //int[] anArray = { 0, 1, 2, 3, 4, 5 };
+            //int leng = anArray.Length - 1;
+            //int sum = 0;
+            //int amount = 0;
 
-            PrintArrayElements(in anArray, leng);
-            Console.WriteLine("---------------------");
+            //PrintArrayElements(in anArray, leng);
+            //Console.WriteLine("---------------------");
 
-            AmountElements(in anArray, leng,ref amount);
-            Console.WriteLine(amount);
-            Console.WriteLine("---------------------");
+            //AmountElements(in anArray, leng,ref amount);
+            //Console.WriteLine(amount);
+            //Console.WriteLine("---------------------");
 
-            SumElements(in anArray, ref sum, leng);
-            Console.WriteLine(sum);
-            Console.WriteLine("---------------------");
+            //SumElements(in anArray, ref sum, leng);
+            //Console.WriteLine(sum);
+            //Console.WriteLine("---------------------");
+
+
+            //static void PrintArrayElements(in int[] anArray, int leng)
+            //{
+            //    Console.WriteLine(anArray[leng]);
+            //    leng--;
+            //    if (leng <= 0)
+            //        return;
+            //    PrintArrayElements(in anArray, leng);
+            //}
+
+            //static void AmountElements(in int[] anArray, int leng, ref int amount)
+            //{
+            //    if (leng < 0)
+            //        return;
+            //    amount++;
+            //    leng--;
+            //    AmountElements(in anArray, leng, ref amount);
+            //}
+
+            //static void SumElements(in int[] anArray, ref int sum, int leng)
+            //{
+            //    if (leng < 0)
+            //        return;
+            //    int var = anArray[leng];
+            //    leng--;
+            //    sum += var;
+            //    SumElements(in anArray, ref sum, leng);
+            //}
+
+
         }
-        static void PrintArrayElements(in int[] anArray, int leng)
-        {
-            Console.WriteLine(anArray[leng]);
-            leng--;
-            if (leng <= 0)
-                return;
-            PrintArrayElements(in anArray, leng);
-        }
-
-        static void AmountElements(in int[] anArray, int leng, ref int amount)
-        {
-            if (leng < 0)
-                return;
-            amount++;
-            leng--;
-            AmountElements(in anArray, leng,ref amount);
-        }
-
-        static void SumElements (in int[] anArray, ref int sum, int leng)
-        {
-            if (leng < 0)
-                return;
-            int var = anArray[leng];
-            leng--;
-            sum += var;
-            SumElements(in anArray, ref sum, leng);
-        }
-
     }
 }

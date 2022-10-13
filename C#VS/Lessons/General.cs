@@ -892,38 +892,75 @@ namespace Lessons
             //}
 
 
-        //    Item aboba = InitItem();
-        //    Print(aboba);
+            //    Item aboba = InitItem();
+            //    Print(aboba);
 
-        //class Item
-        //{
-        //    public int Value { get; set; }
-        //    public Item Child { get; set; } // Тут включает сам себя
-        //}
-        //static Item InitItem()
-        //{
-        //    return new Item()
-        //    {
-        //        Value = 5,
-        //        Child = new Item()
-        //        {
-        //            Value = 10,
-        //            Child = new Item()
-        //            {
-        //                Value = 20,
-        //            }
-        //        }
-        //    };
-        //}
+            //class Item
+            //{
+            //    public int Value { get; set; }
+            //    public Item Child { get; set; } // Тут включает сам себя
+            //}
+            //static Item InitItem()
+            //{
+            //    return new Item()
+            //    {
+            //        Value = 5,
+            //        Child = new Item()
+            //        {
+            //            Value = 10,
+            //            Child = new Item()
+            //            {
+            //                Value = 20,
+            //            }
+            //        }
+            //    };
+            //}
 
-        //static void Print(Item aboba)
-        //{
-        //    if (aboba != null)
-        //    {
-        //        Console.WriteLine(aboba.Value);
-        //        Print(aboba.Child); // Рекурсия чтобы всё вызвать
-        //    }
-        //}
+            //static void Print(Item aboba)
+            //{
+            //    if (aboba != null)
+            //    {
+            //        Console.WriteLine(aboba.Value);
+            //        Print(aboba.Child); // Рекурсия чтобы всё вызвать
+            //    }
+            //}
+
+
+
+            ////ПРЕОБРАЗОВАНИЕ И ПРИВЕДЕНИЕ ТИПОВ                                               ПРЕОБРАЗОВАНИЕ И ПРИВЕДЕНИЕ ТИПОВ
+
+            //double a = 5.3; //Занимает больше места в ОЗУ.
+            //float b = (float)a; //для явного преобразования закдываем в скобки тип данных.
+            //Мы не можем преобразовать из double в float, т.к. потенциально double может хранить больше или меньше ,чем float!!!
+
+            //float z = 1.4F; // Если без суффикса F, то IDE по умолчанию думает - что это double.
+            //double V = z;
+
+            //Conv((float)a);
+            //static void Conv(float var1)
+            //{
+            //    Console.WriteLine(var1);
+            //}
+
+            //Явно приведение типов(когда скобочки хуячим) - сужающее преобразование (тип дабл больше флоата)
+            //Неявное(автоматическое) - расширяющее преобразование.
+
+            //int ab = 5;
+            //double bc = ab; 
+            //byte beb = (byte)ab; //У байта от 0 - 255, у int - 999+. Поэтому мы можем потерять данные, если у инта будет больше данных чем лимит байта !!
+            ////bool nub = (bool)ab; // Так не может, должны использовать класс новерт
+            //bool nub = Convert.ToBoolean(bc);
+
+            //int a = 2;
+            //float b = 2.5F;
+            //int result = (int)(a + b); //но мы потеряем дробную часть
+            //Либо можно одну переменную, которая float - перевести во float.
+
+            //Для string мы должны использовать класс Convert ,лмбо метод Parse
+
+
+
+
         }
     }
 }   
