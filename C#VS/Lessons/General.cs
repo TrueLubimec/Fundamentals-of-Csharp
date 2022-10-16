@@ -1098,40 +1098,40 @@ namespace Lessons
             //	Console.WriteLine(day);
             //}
 
-            string str = Console.ReadLine();
-			WeekDay DAY = (WeekDay)Enum.Parse(typeof(WeekDay), str, ignoreCase: true/*ИГНОРИРУЕТ ЗАГЛАВНЫЕ ЛИ ИЛИ ПРОПИСНЫЕ*/);
-			Console.WriteLine(DAY);
+            //         string str = Console.ReadLine();
+            //WeekDay DAY = (WeekDay)Enum.Parse(typeof(WeekDay), str, ignoreCase: true/*ИГНОРИРУЕТ ЗАГЛАВНЫЕ ЛИ ИЛИ ПРОПИСНЫЕ*/);
+            //Console.WriteLine(DAY);
 
-            switch (DAY)
-            {
-                case WeekDay.Monday:
-                    break;
-                case WeekDay.Tuesday:
-                    break;
-                case WeekDay.Wednesday:
-                    break;
-                case WeekDay.Thursday:
-                    break;
-                case WeekDay.Friday:
-                    break;
-                case WeekDay.Saturday:
-                    break;
-                case WeekDay.Sunday:
-                    break;
-                default:
-                    break;
-            }
+            //         switch (DAY)
+            //         {
+            //             case WeekDay.Monday:
+            //                 break;
+            //             case WeekDay.Tuesday:
+            //                 break;
+            //             case WeekDay.Wednesday:
+            //                 break;
+            //             case WeekDay.Thursday:
+            //                 break;
+            //             case WeekDay.Friday:
+            //                 break;
+            //             case WeekDay.Saturday:
+            //                 break;
+            //             case WeekDay.Sunday:
+            //                 break;
+            //             default:
+            //                 break;
+            //         }
 
+            //     enum WeekDay : byte //После двоеточия МОЖНО изменить тип данных для ENUM, но необязательно
+            //     {
+            //         Monday = 1,
+            //         Tuesday,
+            //         Wednesday,
+            //         Thursday,
+            //         Friday,
+            //         Saturday,
+            //         Sunday
+            //     }
         }
-		enum WeekDay : byte //После двоеточия МОЖНО изменить тип данных для ENUM, но необязательно
-		{
-			Monday = 1,
-			Tuesday,
-			Wednesday,
-			Thursday,
-			Friday,
-			Saturday,
-			Sunday
-		}
-	}
+    }
 }   
