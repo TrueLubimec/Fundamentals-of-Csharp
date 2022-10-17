@@ -10,7 +10,7 @@ using System.Threading;
 
 namespace Lessons
 {
-	internal class General
+	internal class Basics
 	{
 		////ФУНКЦИИ И МЕТОДЫ                                                                ФУНКЦИИ И МЕТОДЫ
 

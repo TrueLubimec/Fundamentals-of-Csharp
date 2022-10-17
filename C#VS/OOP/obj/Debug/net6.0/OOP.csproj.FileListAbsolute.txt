@@ -1,0 +1,15 @@
+D:\Code\Codding\Fundamentals of C++\C#VS\OOP\bin\Debug\net6.0\OOP.exe
+D:\Code\Codding\Fundamentals of C++\C#VS\OOP\bin\Debug\net6.0\OOP.deps.json
+D:\Code\Codding\Fundamentals of C++\C#VS\OOP\bin\Debug\net6.0\OOP.runtimeconfig.json
+D:\Code\Codding\Fundamentals of C++\C#VS\OOP\bin\Debug\net6.0\OOP.dll
+D:\Code\Codding\Fundamentals of C++\C#VS\OOP\bin\Debug\net6.0\OOP.pdb
+D:\Code\Codding\Fundamentals of C++\C#VS\OOP\obj\Debug\net6.0\OOP.csproj.AssemblyReference.cache
+D:\Code\Codding\Fundamentals of C++\C#VS\OOP\obj\Debug\net6.0\OOP.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Codding\Fundamentals of C++\C#VS\OOP\obj\Debug\net6.0\OOP.AssemblyInfoInputs.cache
+D:\Code\Codding\Fundamentals of C++\C#VS\OOP\obj\Debug\net6.0\OOP.AssemblyInfo.cs
+D:\Code\Codding\Fundamentals of C++\C#VS\OOP\obj\Debug\net6.0\OOP.csproj.CoreCompileInputs.cache
+D:\Code\Codding\Fundamentals of C++\C#VS\OOP\obj\Debug\net6.0\OOP.dll
+D:\Code\Codding\Fundamentals of C++\C#VS\OOP\obj\Debug\net6.0\refint\OOP.dll
+D:\Code\Codding\Fundamentals of C++\C#VS\OOP\obj\Debug\net6.0\OOP.pdb
+D:\Code\Codding\Fundamentals of C++\C#VS\OOP\obj\Debug\net6.0\OOP.genruntimeconfig.cache
+D:\Code\Codding\Fundamentals of C++\C#VS\OOP\obj\Debug\net6.0\ref\OOP.dll
