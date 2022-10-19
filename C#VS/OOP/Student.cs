@@ -27,4 +27,10 @@ namespace OOP
             return $"{name} {age}";
         }
     }
+    
+    class Point
+    {
+        private int x;
+        public int y;
+    }
 }

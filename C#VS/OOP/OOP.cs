@@ -1,21 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using OOP;
+using System.Reflection;
 
 namespace OOP // Если namespace (названия) одинаковые в файлах, то они позволяют юзать классы из других файлов
 {
 	class Program
 	{
-        static Student GetStudent()
-        {
-            Student/* тут мог быть var (это не тип данных) */ Student = new Student();
 
-            Student.id = Guid.NewGuid();
-            Student.name = "Kto";
-            Student.group = 01;
-            Student.age = 22;
-
-            return Student;
-        }
         static void Main(string[] args)
 		{
 			Console.WriteLine("Hello, World!");
@@ -103,6 +94,22 @@ namespace OOP // Если namespace (названия) одинаковые в �
             //car.PrintSpeed();
             //car.DrivingForward();
             //car.PrintSpeed();
+
+
+
+            //// МЕТОДЫ И КЛАССЫ | РАЗНИЦА МЕЖДУ public & private                       РАЗНИЦА МЕЖДУ public & private
+            // Очевидно, что public позволяет обращаться к методу через объект,
+            // а private не позволяет - НО ЭТО НЕ ЗНАЧИТ, что его нет или на него
+            // нельзя как-то повлиять
+            // Если модификатор доступа не обозначен - то по умолчанию - private
+
+            //var typeInfo = typeof(Point).
+            //    GetField(BindingFlags.Instance | 
+            //    BindingFlags.NonPublic | 
+            //    BindingFlags.Public);
+
+
+
         }
     }
 }
