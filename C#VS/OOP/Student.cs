@@ -41,10 +41,4 @@ namespace OOP
             this.group = group;
         }
     }
-
-    class Point
-    {
-        private int x;
-        public int y;
-    }
 }
