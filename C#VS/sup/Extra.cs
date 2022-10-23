@@ -254,8 +254,6 @@ namespace sup
             //    sum += var;
             //    SumElements(in anArray, ref sum, leng);
             //}
-
-
         }
     }
 }

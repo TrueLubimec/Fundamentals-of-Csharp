@@ -1,0 +1,15 @@
+D:\Code\Codding\Fundamentals of C++\C#VS\Codeforces\bin\Debug\net6.0\Codeforces.exe
+D:\Code\Codding\Fundamentals of C++\C#VS\Codeforces\bin\Debug\net6.0\Codeforces.deps.json
+D:\Code\Codding\Fundamentals of C++\C#VS\Codeforces\bin\Debug\net6.0\Codeforces.runtimeconfig.json
+D:\Code\Codding\Fundamentals of C++\C#VS\Codeforces\bin\Debug\net6.0\Codeforces.dll
+D:\Code\Codding\Fundamentals of C++\C#VS\Codeforces\bin\Debug\net6.0\Codeforces.pdb
+D:\Code\Codding\Fundamentals of C++\C#VS\Codeforces\obj\Debug\net6.0\Codeforces.csproj.AssemblyReference.cache
+D:\Code\Codding\Fundamentals of C++\C#VS\Codeforces\obj\Debug\net6.0\Codeforces.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Codding\Fundamentals of C++\C#VS\Codeforces\obj\Debug\net6.0\Codeforces.AssemblyInfoInputs.cache
+D:\Code\Codding\Fundamentals of C++\C#VS\Codeforces\obj\Debug\net6.0\Codeforces.AssemblyInfo.cs
+D:\Code\Codding\Fundamentals of C++\C#VS\Codeforces\obj\Debug\net6.0\Codeforces.csproj.CoreCompileInputs.cache
+D:\Code\Codding\Fundamentals of C++\C#VS\Codeforces\obj\Debug\net6.0\Codeforces.dll
+D:\Code\Codding\Fundamentals of C++\C#VS\Codeforces\obj\Debug\net6.0\refint\Codeforces.dll
+D:\Code\Codding\Fundamentals of C++\C#VS\Codeforces\obj\Debug\net6.0\Codeforces.pdb
+D:\Code\Codding\Fundamentals of C++\C#VS\Codeforces\obj\Debug\net6.0\Codeforces.genruntimeconfig.cache
+D:\Code\Codding\Fundamentals of C++\C#VS\Codeforces\obj\Debug\net6.0\ref\Codeforces.dll
