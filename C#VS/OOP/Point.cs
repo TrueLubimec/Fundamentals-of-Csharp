@@ -52,6 +52,15 @@ namespace OOP
     internal class MyClass
     {
         public int a;
-        public static int b;
+        public static int b; // статичное поле
+        public static void Foo()
+        {
+            // тут мы не можем работать с не-static членами
+            // Из-за static мы теряем возможность использовать полиморфизм для ООП (т.к. необходимо создавать экземпляр)
+        }
+        public void Boo()
+        {
+            // Тут мы можем юзать и static и non-static члены
+        }
     }
 }
