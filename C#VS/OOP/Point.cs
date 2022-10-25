@@ -80,8 +80,8 @@ namespace OOP
     }
 
     //// СТАТИЧЕСКИЙ КЛАСС                                                              СТАТИЧЕСКИЙ КЛАСС
-    static internal class StaticClass
-    {
-        // Можно ток всё в static
-    }
+    //static internal class StaticClass
+    //{
+    //    // Можно ток всё в static
+    //}
 }
