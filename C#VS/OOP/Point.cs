@@ -52,30 +52,32 @@ namespace OOP
 
     internal class MyClass
     {
-        public MyClass()
-        {
-            counter++;
-        }
-        private static int counter;
+        ////СТАТИЧЕСКИЙ МЕТОД                                                           СТАТИЧЕСКИЙ МЕТОД 
+        //public MyClass()
+        //{
+        //    counter++;
+        //}
+        //private static int counter;
 
-        public static int Counter
-        {
-            get { return counter; }
-            private set { counter = value; } // private нужен для инкапсуляцци,
-            // чтобы мы могли юзать сеттер внутри класса, но не могли повлиять в главном файле
-        }
+        //public static int Counter
+        //{
+        //    get { return counter; }
+        //    private set { counter = value; } // private нужен для инкапсуляцци,
+        //    // чтобы мы могли юзать сеттер внутри класса, но не могли повлиять в главном файле
+        //}
+
+        //public int a;
+        //public static int b; // статичное поле
+        //public static void Foo()
+        //{
+        //    // тут мы не можем работать с не-static членами
+        //    // Из-за static мы теряем возможность использовать полиморфизм для ООП (т.к. необходимо создавать экземпляр)
+        //}
+        //public void Boo()
+        //{
+        //    // Тут мы можем юзать и static и non-static члены
+        //}
 
 
-        public int a;
-        public static int b; // статичное поле
-        public static void Foo()
-        {
-            // тут мы не можем работать с не-static членами
-            // Из-за static мы теряем возможность использовать полиморфизм для ООП (т.к. необходимо создавать экземпляр)
-        }
-        public void Boo()
-        {
-            // Тут мы можем юзать и static и non-static члены
-        }
     }
 }
