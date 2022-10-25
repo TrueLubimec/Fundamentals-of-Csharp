@@ -77,7 +77,11 @@ namespace OOP
         //{
         //    // Тут мы можем юзать и static и non-static члены
         //}
+    }
 
-
+    //// СТАТИЧЕСКИЙ КЛАСС                                                              СТАТИЧЕСКИЙ КЛАСС
+    static internal class StaticClass
+    {
+        // Можно ток всё в static
     }
 }
