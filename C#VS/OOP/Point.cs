@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,6 +52,20 @@ namespace OOP
 
     internal class MyClass
     {
+        public MyClass()
+        {
+            counter++;
+        }
+        private static int counter;
+
+        public static int Counter
+        {
+            get { return counter; }
+            private set { counter = value; } // private нужен для инкапсуляцци,
+            // чтобы мы могли юзать сеттер внутри класса, но не могли повлиять в главном файле
+        }
+
+
         public int a;
         public static int b; // статичное поле
         public static void Foo()
