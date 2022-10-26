@@ -42,15 +42,15 @@ namespace OOP
 
     //// МЕТОДЫ РАСШИРЕНИЯ                                                                        МЕТОДЫ РАСШИРЕНИЯ
     // Желательно писать в другом пространстве имён
-    static class MyExtension
-    {
-        public static void Print(this DateTime dateTime) // В скобках указываем для какой структуры расширение        {
-        {
-            Console.WriteLine(dateTime);
-        }
-        public static bool Check(this DateTime dateTime, DayOfWeek weekday) // В скобках указываем для какой структуры расширение        {
-        {
-            return dateTime.DayOfWeek == weekday;
-        }
-    }
+    //static class MyExtension
+    //{
+    //    public static void Print(this DateTime dateTime) // В скобках указываем для какой структуры расширение        {
+    //    {
+    //        Console.WriteLine(dateTime);
+    //    }
+    //    public static bool Check(this DateTime dateTime, DayOfWeek weekday) // В скобках указываем для какой структуры расширение        {
+    //    {
+    //        return dateTime.DayOfWeek == weekday;
+    //    }
+    //}
 }
