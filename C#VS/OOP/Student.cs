@@ -9,11 +9,11 @@ namespace OOP
 {
     internal class Student
     {
-        //public Guid id;
+        //public guid id;
         //public string? name;
-        //public DateTime age;
+        //public datetime age;
         //public int group;
-        
+
         ////// МЕТОДЫ И КЛАССЫ | ВЫЗОВ МЕТОДА ОБЪЕКТА КЛАССА                          МЕТОДЫ И КЛАССЫ | ВЫЗОВ МЕТОДА ОБЪЕКТА КЛАССА
         //public void Print ()
         //{
@@ -40,6 +40,12 @@ namespace OOP
         //    this.id = new Guid();
         //    this.group = group;
         //}
+
+
+        //// СИНСТАКСИС ИНИЦИАЛИЗАЦИИ ОБЪЕКТОВ
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
     }
 
     ////particle КЛАСС                                                                particle КЛАСС
