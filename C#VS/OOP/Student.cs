@@ -43,30 +43,30 @@ namespace OOP
 
 
         //// СИНСТАКСИС ИНИЦИАЛИЗАЦИИ ОБЪЕКТОВ
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
+        //public int Id { get; set; }
+        //public string Name { get; set; }
+        //public int Age { get; set; }
     }
 
     //// НАСЛЕДОВАНИЕ                                                                   НАСЛЕДОВАНИЕ
-    class Person
-    {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public void PrintName()
-        {
-            Console.WriteLine($"Meine Name ist {FirstName}!");
-        }
-    }
-    class Studik : Person // Через двоеточие указываем от чего унаследовать
-    {
-        // Т.е класс Studik односвременно явялется классом Person.
-        // Studik - наследник. Person - базовый
-        public void Learn()
-        {
-            Console.WriteLine($"{LastName} is studying");
-        }
-    }
+    //class Person
+    //{
+    //    public string FirstName { get; set; }
+    //    public string LastName { get; set; }
+    //    public void PrintName()
+    //    {
+    //        Console.WriteLine($"Meine Name ist {FirstName}!");
+    //    }
+    //}
+    //class Studik : Person // Через двоеточие указываем от чего унаследовать
+    //{
+    //    // Т.е класс Studik одновременно явялется классом Person.
+    //    // Studik - наследник. Person - базовый
+    //    public void Learn()
+    //    {
+    //        Console.WriteLine($"{LastName} is studying");
+    //    }
+    //}
 
 
 
