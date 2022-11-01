@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using OOP;
 using System.Reflection;
+using System;
 
 namespace OOP // Если namespace (названия) одинаковые в файлах, то они позволяют юзать классы из других файлов
 {
@@ -266,8 +267,28 @@ namespace OOP // Если namespace (названия) одинаковые в �
 
             //// КЛЮЧЕВОЕ СЛОВО base                                                    КЛЮЧЕВОЕ СЛОВО base
             // ФАЙЛ Point.cs
-            Point3D point = new Point3D(55, 22,3);
+            //Point3D point = new Point3D(55, 22,3);
 
+
+
+            //// ПРИВЕДЕНИЕ ТИПОВ || ОПЕРАТОРЫ AS IS                                    ПРИВЕДЕНИЕ ТИПОВ || ОПЕРАТОРЫ AS IS
+            // ФАЙЛ Point.cs , класс Point
+            object obj = new Point(); // В этом случае - без приведения мы не можем юзать фичи Point'a 
+            //Point point = (Point) obj; // Явно привели тип
+            Foo(obj);
+        }
+        static void Test1(object obj)
+        {
+            Point point = obj as Point; // Если типы не совпадают, то будет null
+
+            if (point != null)
+                point.Print();
+        }
+        // IS
+        static void Test2(object obj)
+        {
+            if (obj is Point point) // Тип даёт True / False и решает закидывать или нет
+                point.print();
         }
     }
 }

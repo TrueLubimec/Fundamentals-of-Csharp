@@ -7,27 +7,31 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    //internal class Point
-    //{
-        //private int x;
-        //public int y;
+    internal class Point
+    {
+        private int x;
+        public int y;
+        public void Print(int var1)
+        {
+            System.Console.WriteLine(var1);
+        }
 
-        ////СВОЙСТВА get set | ключевое слово value                                     СВОЙСТВА get set | ключевое слово value  
+        // //СВОЙСТВА get set | ключевое слово value                                     СВОЙСТВА get set | ключевое слово value  
 
-        // сниппет propfull (два раза tap)
-        //private int y;
+        // //сниппет propfull (два раза tap)
+        // private int y;
 
-        //public int Y
-        //{
+        // public int Y
+        // {
         //    /*аксессоры get & set*/
         //    get { return y; }
         //    set { y = value;/*ключевое слово, подстраивается под тип данных как в методе*/ }
-        //}
+        // }
 
-        //private int x;
+        // private int x;
 
-        //public int X
-        //{
+        // public int X
+        // {
         //    get { return x; } // Можно в аксессоры даже режим доступа поставить (public || private)
         //    set {
         //        if (value < 1)
@@ -42,12 +46,12 @@ namespace OOP
         //        }
         //        x = value;
         //    }
-        //}
+        // }
 
-        //// Иной сниппет prop - автоматическое свойство
-        //public int MyProperty { get; set; } // Просто тут неявно описано то, что есть в propfull
+        // // Иной сниппет prop - автоматическое свойство
+        // public int MyProperty { get; set; } // Просто тут неявно описано то, что есть в propfull
 
-    //}
+    }
 
     //internal class MyClass
     //{
@@ -84,35 +88,38 @@ namespace OOP
     //    // Можно ток всё в static
     //}
 
-    internal class Point2D
-    {
-        public Point2D(int a, int b) //Конструктор требует переменные
-        {
-            x = a;
-            y = b;
-            Console.WriteLine("Class counstructor of Point2D has been executed");
-        }
-        public int x { get; set; }
-        public int y { get; set; }
-        public void Print2D()
-        {
-            Console.WriteLine(x + " " + y);
-        }
-    }
-    internal class Point3D : Point2D
-    {
-        public Point3D(int a, int b, int z) : base(a, b) //Вот и ключевое слово, которое моможет передать переменные
-        {
-            this.z = z;
-            Console.WriteLine("Class counstructor of Point3D has been executed");
-        }
-        public int z { get; set; }
-        public void Print3D()
-        {
-            base.Print2D(); // МОЖНО переиспользовать от предка(базового)
-            // но тут base - useless, т.к. метод уже используется от родителя, который входит в наследника
-            // чем-то схоже с this (но он работает с текущим классом)
-            // base полезен, если методы похожи по нахванию
-        }
-    }
-}
+
+
+//// КЛЮЧЕВОЕ СЛОВО base                                                    КЛЮЧЕВОЕ СЛОВО base
+    // internal class Point2D
+    // {
+    //     public Point2D(int a, int b) //Конструктор требует переменные
+    //     {
+    //         x = a;
+    //         y = b;
+    //         Console.WriteLine("Class counstructor of Point2D has been executed");
+    //     }
+    //     public int x { get; set; }
+    //     public int y { get; set; }
+    //     public void Print2D()
+    //     {
+    //         Console.WriteLine(x + " " + y);
+    //     }
+    // }
+    // internal class Point3D : Point2D
+    // {
+    //     public Point3D(int a, int b, int z) : base(a, b) //Вот и ключевое слово, которое моможет передать переменные
+    //     {
+    //         this.z = z;
+    //         Console.WriteLine("Class counstructor of Point3D has been executed");
+    //     }
+    //     public int z { get; set; }
+    //     public void Print3D()
+    //     {
+    //         base.Print2D(); // МОЖНО переиспользовать от предка(базового)
+    //         // но тут base - useless, т.к. метод уже используется от родителя, который входит в наследника
+    //         // чем-то схоже с this (но он работает с текущим классом)
+    //         // base полезен, если методы похожи по нахванию
+    //     }
+    //}
+//}
