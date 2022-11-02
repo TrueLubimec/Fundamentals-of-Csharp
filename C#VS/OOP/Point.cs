@@ -90,7 +90,7 @@ namespace OOP
 
 
 
-//// КЛЮЧЕВОЕ СЛОВО base                                                    КЛЮЧЕВОЕ СЛОВО base
+    //// КЛЮЧЕВОЕ СЛОВО base                                                    КЛЮЧЕВОЕ СЛОВО base
     // internal class Point2D
     // {
     //     public Point2D(int a, int b) //Конструктор требует переменные
