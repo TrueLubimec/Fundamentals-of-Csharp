@@ -1133,5 +1133,32 @@ namespace Lessons
             //         Sunday
             //     }
         }
+        static int Decode(string recieved)
+        {
+            int[] anArray = new int[recieved.Length];
+            int counter = 0;
+            int number;
+            bool check;
+            foreach (char var1 in recieved)
+            {
+                string var2 = Convert.ToString(var1);
+                if (check = int.TryParse(var2, out number))
+                {
+                    anArray[counter] = number;
+                    counter++;
+                }
+            }
+            int[] secondArray = new int[counter];
+            for (int c2 = 0; c2 < counter; c2++)
+            {
+                secondArray[c2] = anArray[c2];
+            }
+            int result = 0;
+            for (int i = 0; i < secondArray.Length; i++)
+            {
+                result += secondArray[i] * Convert.ToInt32(Math.Pow(10, secondArray.Length - i - 1));
+            }
+            return result;
+        }
     }
 }   
