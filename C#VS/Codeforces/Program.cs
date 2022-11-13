@@ -13,33 +13,18 @@ class Program
 {
 	static void Main()
 	{
-		int Length = int.Parse(Console.ReadLine());
-		string elem = Console.ReadLine();
-		string[] anArray = new string[Length];
-		try
-		{
-			int[] intArray = elem.Split(' ').Select(a => int.Parse(a)).ToArray();
-            int answer = NOD(intArray[0], intArray[1]);
-            int answer2 = NOD(intArray[2], intArray[3]);
-            int answer3 = NOD(intArray[4], intArray[5]);
-			Console.WriteLine(answer);
-        }
-		catch(Exception)
-		{
-            Console.WriteLine("1");
-        }
+		string recieved = Console.ReadLine();
+		double result = Calculate(recieved);
+		Console.WriteLine(result);
+		Thread.Sleep(10000);
 	}
-	static int NOD(int var1, int var2) {
-		if (var1 == 0)	return var2;
-		else { 
-			while (var2 != 0)
-			{
-				if (var1 > var2)
-					var1 -= var2;
-				else
-					var2 -= var1;
-			}
-			return var1;
-		}
+	protected static double Calculate (string recieved)
+	{
+		double[] intArray = recieved.Split(' ').Select(a => double.Parse(a)).ToArray();
+		double vklad = intArray[0];
+		double procentage = intArray[1];
+		double srok = intArray[2];
+		double kapital = vklad + Math.Pow(1 + ((procentage /100) * (12/100)), (int)srok);
+		return Math.Round(kapital,1);
 	}
 }
