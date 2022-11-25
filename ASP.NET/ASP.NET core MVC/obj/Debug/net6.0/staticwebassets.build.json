@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jSdBxsdfnV6Enf9UExIswv5+MkyskH8an3DLzxXNu5g=",
+  "Hash": "fBQoAixsCAfuFraGCjMkM+V8QI7+PmOFz1SO0msZnOw=",
   "Source": "ASP.NET core MVC",
   "BasePath": "_content/ASP.NET core MVC",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Code\\Codding\\Fundamentals of C++\\ASP.NET\\ASP.NET core MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ASP.NET core MVC.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Code\\Codding\\Fundamentals of C++\\ASP.NET\\ASP.NET core MVC\\wwwroot\\css\\bootswatchTheme.css",
+      "SourceId": "ASP.NET core MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Code\\Codding\\Fundamentals of C++\\ASP.NET\\ASP.NET core MVC\\wwwroot\\",
+      "BasePath": "_content/ASP.NET core MVC",
+      "RelativePath": "css/bootswatchTheme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootswatchTheme.css"
     },
     {
       "Identity": "D:\\Code\\Codding\\Fundamentals of C++\\ASP.NET\\ASP.NET core MVC\\wwwroot\\css\\site.css",

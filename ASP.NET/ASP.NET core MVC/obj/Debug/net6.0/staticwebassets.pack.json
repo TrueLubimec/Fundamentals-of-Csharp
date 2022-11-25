@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\ASP.NET core MVC.bundle.scp.css"
     },
     {
+      "Id": "D:\\Code\\Codding\\Fundamentals of C++\\ASP.NET\\ASP.NET core MVC\\wwwroot\\css\\bootswatchTheme.css",
+      "PackagePath": "staticwebassets\\css\\bootswatchTheme.css"
+    },
+    {
       "Id": "D:\\Code\\Codding\\Fundamentals of C++\\ASP.NET\\ASP.NET core MVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

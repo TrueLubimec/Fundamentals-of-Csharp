@@ -1,5 +1,4 @@
-﻿
-using DocumentFormat.OpenXml.Drawing.Diagrams;
+﻿using ASP.NET_core_MVC.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace ASP.NET_core_MVC.Data
@@ -8,9 +7,9 @@ namespace ASP.NET_core_MVC.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-                
+            
         }
         
-        public DbSet<Category>
+        public DbSet<Category> Categories { get; set; }
     }
 }
