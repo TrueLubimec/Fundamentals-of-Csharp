@@ -273,6 +273,30 @@ namespace OOP // Если namespace (названия) одинаковые в �
             //// ОПЕРАТОРЫ AS IS                                                        ОПЕРАТОРЫ AS IS
             //
 
+            //    static T Max<T>(T[] source)
+            //        where  T: IComparable<T>
+            //    {
+            //        if (source.Length == 0)
+            //            return default(T);
+            //        Array.Sort(source);
+            //        return source[source.Length - 1];
+            //    }
+
+            //IEnumerable<int> GetNumbers(int n)
+            //{
+            //    if (n < 0) throw new ArgumentException("n < 0");
+            //    if (n == 0) return new int[0];
+            //    yield return 0;
+            //    for (int i = 1; i < n; i++)
+            //        if (i % 10000 == 0) break;
+            //        else yield return i;
+            //    yield break;
+            //}
+
+            delegate void TryGet<T>(T str, T inta);
+            {
+
+            }
         }
     }
 }
