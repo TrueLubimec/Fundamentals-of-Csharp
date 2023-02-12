@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Code\\Codding\\Fundamentals of C++\\REST\\BuberBreakfast\\BuberBrakfast.Contracts\\BuberBrakfast.Contracts.csproj",
-      "projectName": "BuberBrakfast.Contracts",
-      "projectPath": "D:\\Code\\Codding\\Fundamentals of C++\\REST\\BuberBreakfast\\BuberBrakfast.Contracts\\BuberBrakfast.Contracts.csproj",
+      "projectUniqueName": "D:\\Code\\Codding\\Fundamentals of C++\\REST\\BuberBreakfast\\BuberBreakfast.Contract\\BuberBreakfast.Contract.csproj",
+      "projectName": "BuberBreakfast.Contract",
+      "projectPath": "D:\\Code\\Codding\\Fundamentals of C++\\REST\\BuberBreakfast\\BuberBreakfast.Contract\\BuberBreakfast.Contract.csproj",
       "packagesPath": "C:\\Users\\Lubimec\\.nuget\\packages\\",
-      "outputPath": "D:\\Code\\Codding\\Fundamentals of C++\\REST\\BuberBreakfast\\BuberBrakfast.Contracts\\obj\\",
+      "outputPath": "D:\\Code\\Codding\\Fundamentals of C++\\REST\\BuberBreakfast\\BuberBreakfast.Contract\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
