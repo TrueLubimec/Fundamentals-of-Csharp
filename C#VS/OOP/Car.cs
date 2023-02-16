@@ -30,4 +30,26 @@ namespace OOP
             return CarSpeed = 0;
         }
     }
+
+    ////Наследование в C# и модификаторы доступа | модификатор protected        Наследование в C# и модификаторы доступа | модификатор protected
+    class a
+    {
+        public int publicField;
+        private int privateField;
+        protected int protectecField;
+        public a()
+        {
+            System.Console.WriteLine(privateField);
+            System.Console.WriteLine(publicField);
+            System.Console.WriteLine(protectecField);
+        }
+    }
+    class b : a
+    {
+        public b()
+        {
+            protectecField;// т.е мы можем использовать protected поля (приватные не можем)
+            // в наследнике, но не можем снаружи
+        } 
+    }
 }
