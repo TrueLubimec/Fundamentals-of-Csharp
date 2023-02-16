@@ -1,4 +1,4 @@
-
+namespace Buberbreakfast;
 
 public record CreateBreakfastRequest(
     string Name,

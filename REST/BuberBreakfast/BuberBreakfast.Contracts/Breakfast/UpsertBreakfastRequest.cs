@@ -1,4 +1,4 @@
-
+namespace Buberbreakfast.Contracts.Breakfast;
 
 public record UpsertBreakfastRequest(
     string Name,
