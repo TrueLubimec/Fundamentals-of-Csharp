@@ -1,4 +1,4 @@
-namespace Buberbreakfast;
+namespace BreakfastContracts;
 
 public record CreateBreakfastRequest(
     string Name,
@@ -7,3 +7,4 @@ public record CreateBreakfastRequest(
     DateTime EndDateTime,
     List<string> Savory,
     List<string> Sweet);
+
