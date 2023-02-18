@@ -3,15 +3,16 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 
 [ApiController]
+[Route("breakfasts")]
 public class BreakfastsController : ControllerBase
 {
-    [HttpPost("/breakfasts")]
+    [HttpPost()]
     public IActionResult CreateBreakfast(CreateBreakfastRequest request)
     {
         return Ok(request);
     }
 
-    [HttpGet("/breakfasts/{id:guid}")]
+    [HttpGet("{id:guid}")]
     public IActionResult GetBreakfast(Guid id)
     {
         return Ok(id);
@@ -23,7 +24,7 @@ public class BreakfastsController : ControllerBase
         return Ok(id);
     }
 
-    [HttpDelete("/breakfasts/{id:guid}")]
+    [HttpDelete("{id:guid}")]
     public IActionResult DeleteBreakfastRequest(Guid id)
     {
         return Ok(id);
