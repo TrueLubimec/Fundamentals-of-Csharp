@@ -27,3 +27,4 @@ D:\Code\Codding\Fundamentals of C++\REST\BuberBreakfast\BuberBreakfast\obj\Debug
 D:\Code\Codding\Fundamentals of C++\REST\BuberBreakfast\BuberBreakfast\obj\Debug\net7.0\BuberBreakfast.pdb
 D:\Code\Codding\Fundamentals of C++\REST\BuberBreakfast\BuberBreakfast\obj\Debug\net7.0\BuberBreakfast.genruntimeconfig.cache
 D:\Code\Codding\Fundamentals of C++\REST\BuberBreakfast\BuberBreakfast\obj\Debug\net7.0\ref\BuberBreakfast.dll
+D:\Code\Codding\Fundamentals of C++\REST\BuberBreakfast\BuberBreakfast\bin\Debug\net7.0\ErrorOr.dll

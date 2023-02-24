@@ -1,4 +1,5 @@
-
+using ErrorOr;
+using ServiceError;
 
 public class breakfastService : IBreakfastService
 {
@@ -13,9 +14,13 @@ public class breakfastService : IBreakfastService
         _breakfast.Remove(id);
     }
 
-    public Breakfast GetBreakfast(Guid id)
+    public ErrorOr<Breakfast> GetBreakfast(Guid id)
     {
-        return _breakfast[id];
+        if (_breakfast.TryGetValue(id, out var breakfast))
+        {
+            return _breakfast[id];
+        }
+        return Errors.Breakfast.NotFound;
     }
 
     public void UpsertBreakfast(Breakfast breakfast)

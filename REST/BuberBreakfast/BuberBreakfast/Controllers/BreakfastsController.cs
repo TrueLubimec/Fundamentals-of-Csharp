@@ -1,6 +1,8 @@
 using BreakfastContracts;
+using ErrorOr;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using ServiceError;
 
 [ApiController]
 [Route("breakfasts")]
@@ -49,7 +51,14 @@ public class BreakfastsController : ControllerBase
     [HttpGet("{id:guid}")]
     public IActionResult GetBreakfast(Guid id)
     {
-        Breakfast breakfast = _breakfastService.GetBreakfast(id);
+        ErrorOr<Breakfast> getBreakfastResult = _breakfastService.GetBreakfast(id);
+        if (getBreakfastResult.IsError &&
+            getBreakfastResult.FirstError == Errors.Breakfast.NotFound)
+        {
+            return NotFound();
+        }
+        var breakfast = getBreakfastResult.Value;
+        
         var response = new BreakfastResponse(
             breakfast.Id,
             breakfast.Name,
