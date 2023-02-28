@@ -3,6 +3,7 @@ using ErrorOr;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using ServiceError;
+using BuberBreakfast.Services.breakfasts;
 
 namespace BuberBreakfast.Controllers;
 
@@ -33,16 +34,12 @@ public class BreakfastsController : ApiController
 
         ErrorOr<Created> createBreakfastResult = _breakfastService.CreateBreakfast(breakfast);
 
-        if (createBreakfastResult.IsError)
-        {
-            return Problem(createBreakfastResult.Errors);
-        }
-        
-        return CreatedAtAction(
-            actionName: nameof(GetBreakfast),
-            routeValues: new { id = breakfast.Id },
-            value: MapBreakfastRespond(breakfast));
+        return createBreakfastResult.Match(
+            created => CreatedAtGetBreakfast(breakfast),
+            errors => Problem(errors));
     }
+
+
 
     [HttpGet("{id:guid}")]
     public IActionResult GetBreakfast(Guid id)
@@ -77,24 +74,26 @@ public class BreakfastsController : ApiController
             DateTime.UtcNow,
             request.Savory,
             request.Sweet);
-        _breakfastService.UpsertBreakfast(breakfast);
 
+        ErrorOr<UpsertedBreakfast> upsertBreakfastResult = _breakfastService.UpsertBreakfast(breakfast);
         // TODO: return 201 if a new breakfast was created
-        return NoContent();
+        return upsertBreakfastResult.Match(
+            upserted => upserted.isNewlyCreated ? CreatedAtGetBreakfast(breakfast) : NoContent(),
+            errors => Problem(errors));
     }
 
     [HttpDelete("{id:guid}")]
     public IActionResult DeleteBreakfastRequest(Guid id)
     {
-        ErrorOr<Deleted> deleteResult = _breakfastService.DeleteBreakfast(id);
+        ErrorOr<Deleted> deleteBreakfastResult = _breakfastService.DeleteBreakfast(id);
 
-        return deleteResult.Match(
+        return deleteBreakfastResult.Match(
             deleted => NoContent(),
             error => Problem(error));
     }
 
 
-        private static BreakfastResponse MapBreakfastRespond(Breakfast breakfast)
+    private static BreakfastResponse MapBreakfastRespond(Breakfast breakfast)
     {
         return new BreakfastResponse(
             breakfast.Id,
@@ -105,6 +104,13 @@ public class BreakfastsController : ApiController
             breakfast.LastModifiedDateTime,
             breakfast.Savory,
             breakfast.Sweet);
+    }
+    private IActionResult CreatedAtGetBreakfast(Breakfast breakfast)
+    {
+        return CreatedAtAction(
+            actionName: nameof(GetBreakfast),
+            routeValues: new { id = breakfast.Id },
+            value: MapBreakfastRespond(breakfast));
     }
 
 }
