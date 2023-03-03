@@ -1,9 +1,8 @@
 using BreakfastContracts;
 using ErrorOr;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using ServiceError;
 using BuberBreakfast.Services.breakfasts;
+using BuberBreakfast.Models;
 
 namespace BuberBreakfast.Controllers;
 
@@ -21,17 +20,21 @@ public class BreakfastsController : ApiController
     [HttpPost]
     public IActionResult CreateBreakfast(CreateBreakfastRequest request)
     {
-        var breakfast = new Breakfast(
-            Guid.NewGuid(),
+        ErrorOr<Breakfast> requestToBreakfastResult = Breakfast.Create(
             request.Name,
             request.Description,
             request.StartDateTime,
             request.EndDateTime,
-            DateTime.UtcNow,
             request.Savory,
             request.Sweet);
+
+        if (requestToBreakfastResult.IsError)
+        {
+            return Problem(requestToBreakfastResult.Errors);
+        }
         //TODO: save breakfast to database
 
+        var breakfast = requestToBreakfastResult.Value;
         ErrorOr<Created> createBreakfastResult = _breakfastService.CreateBreakfast(breakfast);
 
         return createBreakfastResult.Match(
@@ -65,16 +68,15 @@ public class BreakfastsController : ApiController
     [HttpPut("/breakfasts/{id:guid}")]
     public IActionResult UpsertBreakfastRequest(Guid id,UpsertBreakfastRequest request)
     {
-        var breakfast = new Breakfast(
-            id,
+        ErrorOr<Breakfast> requestToBreakfastResult = Breakfast.Create(
             request.Name,
             request.Description,
             request.StartDateTime,
             request.EndDateTime,
-            DateTime.UtcNow,
             request.Savory,
             request.Sweet);
-
+        
+        var breakfast = requestToBreakfastResult.Value;
         ErrorOr<UpsertedBreakfast> upsertBreakfastResult = _breakfastService.UpsertBreakfast(breakfast);
         // TODO: return 201 if a new breakfast was created
         return upsertBreakfastResult.Match(
