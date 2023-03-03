@@ -1,5 +1,6 @@
 using ErrorOr;
 using BuberBreakfast.Services.breakfasts;
+using BuberBreakfast.Models;
 
 public interface IBreakfastService
 {

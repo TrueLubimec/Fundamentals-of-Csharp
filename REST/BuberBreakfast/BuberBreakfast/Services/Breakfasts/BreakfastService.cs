@@ -1,5 +1,6 @@
 using ErrorOr;
-using ServiceError;
+using BuberBreakfast.Models;
+using BuberBreakfast.ServiceError;
 using BuberBreakfast.Services.breakfasts;
 
 public class breakfastService : IBreakfastService
