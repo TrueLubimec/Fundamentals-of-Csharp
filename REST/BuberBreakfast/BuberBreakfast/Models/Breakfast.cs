@@ -1,5 +1,6 @@
 using ErrorOr;
 using BuberBreakfast.ServiceError;
+using BreakfastContracts;
 
 namespace BuberBreakfast.Models;
 
@@ -46,7 +47,8 @@ public class Breakfast
         DateTime startDateTime,
         DateTime endDateTime,
         List<string> savory,
-        List<string> sweet)
+        List<string> sweet,
+        Guid? id = null)
     {
         List<Error> errors = new();
         if (name.Length is < MinNameLength or > MaxNameLength)
@@ -62,7 +64,7 @@ public class Breakfast
         
         //enforce invariants
         return new Breakfast(
-            Guid.NewGuid(),
+            id ?? Guid.NewGuid(),
             name,
             description,
             startDateTime,
@@ -70,5 +72,27 @@ public class Breakfast
             DateTime.UtcNow,
             savory,
             sweet);
+    }
+
+    public static ErrorOr<Breakfast> From(CreateBreakfastRequest request)
+    {
+        return Create(
+            request.Name,
+            request.Description,
+            request.StartDateTime,
+            request.EndDateTime,
+            request.Savory,
+            request.Sweet);
+    }
+    public static ErrorOr<Breakfast> From(Guid id,UpsertBreakfastRequest request)
+    {
+        return Create(
+            request.Name,
+            request.Description,
+            request.StartDateTime,
+            request.EndDateTime,
+            request.Savory,
+            request.Sweet,
+            id);
     }
 }
