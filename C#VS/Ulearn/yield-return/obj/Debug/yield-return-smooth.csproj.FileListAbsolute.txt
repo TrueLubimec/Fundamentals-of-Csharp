@@ -1,0 +1,3 @@
+D:\Code\Codding\Ulearn\yield-return\obj\Debug\yield-return-smooth.csproj.AssemblyReference.cache
+D:\Code\Codding\Ulearn\yield-return\obj\Debug\yield-return-smooth.csproj.SuggestedBindingRedirects.cache
+D:\Code\Codding\Ulearn\yield-return\obj\Debug\yield-return-smooth.csproj.CoreCompileInputs.cache
