@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkUtility", "NetworkUtility\NetworkUtility.csproj", "{0001ED3C-6BB3-40D3-B2FE-035D7BAFE65B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkUtility.Tests", "NetworkUtility.Tests\NetworkUtility.Tests.csproj", "{A9BAADFC-D214-4BB2-9197-FBE63C3125CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{0001ED3C-6BB3-40D3-B2FE-035D7BAFE65B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0001ED3C-6BB3-40D3-B2FE-035D7BAFE65B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0001ED3C-6BB3-40D3-B2FE-035D7BAFE65B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9BAADFC-D214-4BB2-9197-FBE63C3125CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9BAADFC-D214-4BB2-9197-FBE63C3125CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9BAADFC-D214-4BB2-9197-FBE63C3125CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9BAADFC-D214-4BB2-9197-FBE63C3125CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
