@@ -30,3 +30,14 @@ D:\Code\Codding\Fundamentals of C++\DependencyInjection\DependencyInjectionT\obj
 D:\Code\Codding\Fundamentals of C++\DependencyInjection\DependencyInjectionT\obj\Debug\net6.0\DependencyInjectionT.pdb
 D:\Code\Codding\Fundamentals of C++\DependencyInjection\DependencyInjectionT\obj\Debug\net6.0\DependencyInjectionT.genruntimeconfig.cache
 D:\Code\Codding\Fundamentals of C++\DependencyInjection\DependencyInjectionT\obj\Debug\net6.0\ref\DependencyInjectionT.dll
+D:\Code\Codding\Fundamentals of C++\DependencyInjection\DependencyInjectionT\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Code\Codding\Fundamentals of C++\DependencyInjection\DependencyInjectionT\bin\Debug\net6.0\Serilog.dll
+D:\Code\Codding\Fundamentals of C++\DependencyInjection\DependencyInjectionT\bin\Debug\net6.0\Serilog.AspNetCore.dll
+D:\Code\Codding\Fundamentals of C++\DependencyInjection\DependencyInjectionT\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+D:\Code\Codding\Fundamentals of C++\DependencyInjection\DependencyInjectionT\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+D:\Code\Codding\Fundamentals of C++\DependencyInjection\DependencyInjectionT\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+D:\Code\Codding\Fundamentals of C++\DependencyInjection\DependencyInjectionT\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+D:\Code\Codding\Fundamentals of C++\DependencyInjection\DependencyInjectionT\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+D:\Code\Codding\Fundamentals of C++\DependencyInjection\DependencyInjectionT\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+D:\Code\Codding\Fundamentals of C++\DependencyInjection\DependencyInjectionT\bin\Debug\net6.0\Serilog.Sinks.File.dll
+D:\Code\Codding\Fundamentals of C++\DependencyInjection\DependencyInjectionT\obj\Debug\net6.0\DependencyInjectionT.csproj.CopyComplete

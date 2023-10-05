@@ -21,6 +21,9 @@
     {
         //logic = new(); // это расширение будет разрешаться через иъекцию,
         // которую добавили в injection и в builder в файле program
+        logger.LogInformation("Displaying values of {Value1} and {Value2}",
+            logic.Value1, //лучше делать так при логгировании, а не String Interpolation $
+            logic.Value2);
 
         
     }
