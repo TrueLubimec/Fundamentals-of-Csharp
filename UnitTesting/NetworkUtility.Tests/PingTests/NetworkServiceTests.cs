@@ -1,20 +1,26 @@
-﻿using FluentAssertions.Extensions;
+﻿using FakeItEasy;
+using FluentAssertions.Extensions;
 using System.Net.NetworkInformation;
 
 namespace NetworkUtility.Tests;
 public class NetworkServiceTests
 {
+    private readonly IDNS _dns;
     private readonly NetworkService networkService;
+    
 
     public NetworkServiceTests()
     {
-        networkService = new NetworkService();
+
+        _dns = A.Fake<IDNS>();
+        //SUT
+        networkService = new NetworkService(_dns);
     }
     [Fact]
     public void NetworkService_SendPing_ReturnString()
     {
         //Arrange
-        
+        A.CallTo(() => _dns.SendDNS()).Returns(true);
 
         //Act
         var result = networkService.SendPing();

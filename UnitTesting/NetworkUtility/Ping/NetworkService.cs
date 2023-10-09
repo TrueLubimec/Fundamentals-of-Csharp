@@ -3,11 +3,23 @@
 namespace NetworkUtility;
 public class NetworkService
 {
+    private readonly IDNS dNS;
+
+    public NetworkService(IDNS dNS)
+    {
+        this.dNS = dNS;
+    }
     public string SendPing()
     {
-        //DNS Search();
-        //BuildPacket();
-        return "Success: Ping Sent!";
+        var dnsSuccess = dNS.SendDNS();
+        if (dnsSuccess)
+        {
+            return "Success: Ping Sent!";
+        }
+        else
+        {
+            return "Sus us";
+        }
     }
 
     public int PingTimeout(int a, int b)
