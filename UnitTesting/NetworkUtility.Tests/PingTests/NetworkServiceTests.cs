@@ -21,7 +21,7 @@ public class NetworkServiceTests
     {
         //Arrange
         A.CallTo(() => _dns.SendDNS()).Returns(true);
-
+        
         //Act
         var result = networkService.SendPing();
 
