@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\NetworkUtility.Tests\\PingTests",
-    "\\RunGroop"
+    "\\RunGroop",
+    "\\RunGroop\\RunGroopWebApp",
+    "\\RunGroop\\RunGroopWebApp.Tests",
+    "\\RunGroop\\RunGroopWebApp.Tests\\Controller",
+    "\\RunGroop\\RunGroopWebApp\\Controllers"
   ],
-  "SelectedNode": "\\RunGroop",
+  "SelectedNode": "\\RunGroop\\RunGroopWebApp\\Controllers\\ClubController.cs",
   "PreviewInSolutionExplorer": false
 }
